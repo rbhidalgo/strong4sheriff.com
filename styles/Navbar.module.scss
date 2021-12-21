@@ -1,3 +1,6 @@
+@import "mixins";
+@import "variables";
+
 .container {
   // height: 50px;
   // background-color: #000;
@@ -12,9 +15,13 @@
 .listItem{
   display: inline;
   margin: 30px;
-  font-size: 14px;
+  @include type(16px, 24px);
+  text-transform: uppercase;
   color: lightgray;
   cursor: pointer;
+  a {
+    text-decoration: none;
+  }
 }
 
 .hamburger {
