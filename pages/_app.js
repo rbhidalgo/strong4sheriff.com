@@ -1,7 +1,26 @@
+import Layout from '../components/Layout'
+import Head from 'next/head'
 import '../styles/globals.scss'
 
-function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
-}
+const App = ({ Component, pageProps }) => (
+  <>
+    <Head>
+      <title>
+        {Component.title ??
+          'Page Title Goes Here'}
+      </title>
+      <meta
+        name="description"
+        content={
+          Component.description ??
+          'Page Description Goes Here'
+        }
+      />
+    </Head>
+    <Layout>
+      <Component {...pageProps} />
+    </Layout>
+  </>
+)
 
-export default MyApp
+export default App
