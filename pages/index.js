@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss'
 
 export default function Home() {
     return (
-        <section>
+        <section className={styles.container}>
             <h1>Homepage</h1>
         </section>
     )

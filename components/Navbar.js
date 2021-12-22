@@ -2,7 +2,8 @@ import styles from "../styles/Navbar.module.scss"
 import Link from "next/link"
 import {useRouter} from 'next/router';
 import Image from 'next/image'
-import {useState} from "react"
+import {useState, useEffect} from "react"
+import Logo from "../components/Logo"
 
 const menu = [
     {
@@ -25,46 +26,65 @@ const menu = [
 
 const Navbar = () => {
     const router = useRouter();
-    const [open,
-        setOpen] = useState(false);
+    const [open, setOpen] = useState(false);
+    const [navbar, setNavbar] = useState(false);
+
+    const handleScroll = () => {
+      if(window.scrollY >= 120) {
+        setNavbar(true)
+      } else {
+        setNavbar(false)
+      }
+    };
+
+    useEffect(() => {
+      window.addEventListener("scroll", handleScroll); 
+      return () => window.removeEventListener("scroll", handleScroll);
+    });
 
     return (
-        <div className={styles.container}>
-            <Link href="/" passHref>
-                <Image src="/img/logo.svg" alt="Logo" width={100} height={100}/>
-            </Link>
-            <div
-                className={`${open
-                ? styles.hamburger + " open"
-                : styles.hamburger}`}
-                onClick={() => setOpen(!open)}>
-                <div className={styles.line}></div>
-                <div className={styles.line}></div>
-                <div className={styles.line}></div>
-            </div>
-            <ul
-                className={styles.list}
-                onClick={() => setOpen(false)}
-                style={{
-                right: open
-                    ? "0px"
-                    : "-100vw"
-            }}>
-                {menu.map((item, index) => 
-                      <li className={styles.listItem} key={index}>
+        <header>
+            <nav 
+            // className={styles.navContainer}
+            className={`${navbar
+              ? styles.navContainer + " " +styles.scrolled
+              : styles.navContainer}`}
+            >
+                <Link href="/" passHref>
+                  <span>
+                  <Logo className={styles.logo}/>
+                  </span>
+                </Link>
+                <div
+                    className={`${open
+                    ? styles.hamburger + " open"
+                    : styles.hamburger}`}
+                    onClick={() => setOpen(!open)}>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                    <div className={styles.line}></div>
+                </div>
+                <ul
+                    className={`${open
+                    ? styles.list + " " + styles.open
+                    : styles.list}`}
+                    onClick={() => setOpen(false)}
+                    style={{
+                    right: open
+                        ? "0px"
+                        : "-100vw"
+                }}>
+                    {menu.map((item, index) => <li className={styles.listItem} key={index}>
                         <Link href={item.path} passHref>
-                            <a
-                                className={`${router.pathname === item.path
-                                ? styles.active
-                                : ''}`}>
+                            <a className={`${router.pathname === item.path ? styles.active : ''}`}>
                                 {item.title}
                             </a>
                         </Link>
-                      </li>
-                  )}
-            </ul>
-
-        </div>
+                    </li>)}
+                </ul>
+                <a href="" className={styles.donate}>DONATE</a>
+            </nav>
+        </header>
     )
 }
 
