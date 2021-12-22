@@ -21,7 +21,10 @@
   cursor: pointer;
   a {
     text-decoration: none;
-    color: $color-primary;
+    color: $color-secondary;
+    &.active {
+      color:  $color-primary;
+    }
   }
 }
 

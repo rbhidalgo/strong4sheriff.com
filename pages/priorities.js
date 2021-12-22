@@ -1,4 +1,4 @@
-const priorities = () => {
+const Priorities = () => {
   return (
     <div>
       <h1>priorities page</h1>
@@ -6,4 +6,4 @@ const priorities = () => {
   )
 }
 
-export default priorities
+export default Priorities
