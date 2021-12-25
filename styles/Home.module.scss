@@ -2,5 +2,34 @@
 @import "variables";
 
 .container {
-  height: calc(100vh + 150px);
+  height: 90vh;
+  min-height: 100%;
+  position: relative;
+  @include bp(tb) {
+    max-height: 600px;
+  }
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  position: relative;
+  z-index: 0;
+}
+
+.cta {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background-color: $color-primary;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+  h2 {
+
+  }
+  form {
+    display: flex;
+    justify-content: space-between;
+  }
 }

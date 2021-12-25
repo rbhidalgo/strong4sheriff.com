@@ -1,9 +1,9 @@
 import styles from "../styles/Navbar.module.scss"
 import Link from "next/link"
 import {useRouter} from 'next/router';
-import Image from 'next/image'
 import {useState, useEffect} from "react"
 import Logo from "../components/Logo"
+import { motion } from "framer-motion";
 
 const menu = [
     {
@@ -43,7 +43,7 @@ const Navbar = () => {
     });
 
     return (
-        <header>
+        <motion.header initial='initial' animate='animate' exit={{ opacity: 0 }} transition={{ duration: 0.4, ease: 'linear' }}>
             <nav 
             // className={styles.navContainer}
             className={`${navbar
@@ -84,7 +84,7 @@ const Navbar = () => {
                 </ul>
                 <a href="" className={styles.donate}>DONATE</a>
             </nav>
-        </header>
+        </motion.header>
     )
 }
 
