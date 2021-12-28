@@ -20,15 +20,3 @@ $breakpoints: ('mb': 414px,
         +"Available breakpoints are: #{map-keys($breakpoints)}.";
     }
 }
-
-@mixin type($min-font-size: 14px, $max-font-size: 28px, $lower-range: 320px, $upper-range: 1920px) {
-
-  font-size: calc(#{$min-font-size} + #{(($max-font-size / ($max-font-size * 0 + 1)) - ($min-font-size / ($min-font-size * 0 + 1)))} * ( (100vw - #{$lower-range}) / #{(($upper-range / ($upper-range * 0 + 1)) - ($lower-range / ($lower-range * 0 + 1)))}));
-  
-  @media screen and (max-width: $lower-range) {
-    font-size: $min-font-size;
-  }
-  @media screen and (min-width: $upper-range){
-    font-size: $max-font-size;
-  }
-}

@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from '../styles/Home.module.scss'
 import {motion} from 'framer-motion';
 import {fadeInUp, fadeIn, stagger, FadeInWhenVisible} from '../animations/animations';
@@ -48,5 +47,5 @@ export default function Home() {
     )
 }
 
-Home.title = 'About Eric Strong — Eric Strong for Los Angeles County Sheriff'
+Home.title = 'Eric Strong for Los Angeles County Sheriff'
 Home.description = 'Eric Strong for Los Angeles County Sheriff'
