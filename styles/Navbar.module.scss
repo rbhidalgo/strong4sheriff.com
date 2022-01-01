@@ -12,41 +12,50 @@
     z-index: 999;
     background-color: rgba(242, 245, 169, 0);
     transition: all 0.4s linear;
+
     .logo {
         cursor: pointer;
         height: 100px;
         transition: all 0.4s ease;
     }
+
     .list {
         list-style: none;
         display: flex;
         justify-content: space-around;
         width: 80%;
         margin: 0 50px;
+
         .listItem {
             font-size: 24px;
             font-size: clamp(14px, 2vw, 20px);
             cursor: pointer;
+
             a {
                 text-decoration: none;
                 color: $color-secondary;
                 transition: color 0.4s ease;
+
                 &:hover {
                     color: $color-primary;
                 }
+
                 &.active {
                     color: $color-primary;
                 }
             }
         }
     }
+
     .social {
         display: flex;
         margin-right: 50px;
+
         a {
             margin: 0 5px;
         }
     }
+
     .donate {
         text-decoration: none;
         padding: 8px 10px;
@@ -54,6 +63,7 @@
         color: #ffffff;
         font-weight: 800;
         transition: all 0.4s ease;
+
         &:hover {
             background: $color-secondary;
             color: $color-primary;
@@ -63,16 +73,20 @@
     &.scrolled {
         background-color: rgba(0, 0, 0, 0.85);
         padding: 25px 75px;
+
         .logo {
             fill: #ffffff;
         }
+
         .list {
             .listItem {
                 a {
                     color: #ffffff;
+
                     &:hover {
                         color: $color-primary;
                     }
+
                     &.active {
                         color: $color-primary;
                     }
@@ -92,54 +106,72 @@
     background-color: $color-primary;
     transition: all 0.4s ease;
 }
+
 @include bp(dt) {
     .navContainer {
         padding: 25px;
+
         .logo {
             height: 75px;
         }
+
         .list {
             margin: 0 25px;
         }
+
         .social {
             margin-right: 25px;
         }
+
         .donate {
             margin-left: auto;
             margin-right: 50px;
         }
     }
 }
+
 @include bp(tb) {
     .navContainer {
-        padding: 0 20px;
+        padding: 20px;
+
         .list {
-            display: none;
+            // display: none;
             position: fixed;
-            width: 100vw;
-            height: 100vh;
-            background-color: $color-secondary;
-            top: 0;
-            // right: 0;
-            z-index: 9999;
-            margin: 0;
-            padding: 0;
-            font-weight: bold;
-            list-style: none;
-            transition: all 1s ease;
-            &.open {
-                display: flex;
+            display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
                 align-items: center;
                 padding: 100px 50px;
+                
+            width: 0;
+            height: 100vh;
+            background-color: $color-secondary;
+            top: 0;
+            right: 0;
+            z-index: 9999;
+            margin: 0;
+            padding: 0;
+            font-weight: 800;
+            list-style: none;
+            opacity: 0;
+            transform: translateX(100vw);
+            transition: all 1s ease;
+
+            &.open {
+                opacity: 1;
+                width: 100vw;
+                transform: translateX(0%);
             }
+
             .listItem {
+                font-size: 24px;
+                display: inline-block;
                 a {
                     color: #ffffff;
                 }
             }
         }
+
         .social {
             display: none;
             &.open {
@@ -152,6 +184,7 @@
                 z-index: 10000;
             }
         }
+
         .hamburger {
             display: flex;
             flex-direction: column;
@@ -159,21 +192,29 @@
             width: 25px;
             height: 20px;
             cursor: pointer;
+
             &.open {
                 .line {
+
                     // background-color: #ffffff;
                     &:nth-child(2) {
                         display: none;
                     }
+
                     &:nth-child(1) {
                         transform: rotate(-45deg) translateY(4px) translateX(-8px);
                     }
+
                     &:nth-child(3) {
                         transform: rotate(45deg) translateY(-4px) translate(-8px);
                     }
                 }
+
                 z-index: 10000;
             }
+        }
+        &.scrolled {
+          padding: 20px;
         }
     }
 }

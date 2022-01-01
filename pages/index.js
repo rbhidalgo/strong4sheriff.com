@@ -32,10 +32,10 @@ export default function Home() {
                     variants={fadeInUp}>Join Team Strong</motion.h2>
                 <form action="">
                     <FadeInWhenVisible>
-                        <input type="text" name="name" placeholder='name' id=""/>
+                        <input type="text" name="name" placeholder='Name' id=""/>
                     </FadeInWhenVisible>
                     <FadeInWhenVisible delay={.3}>
-                        <input type="email" name="email" placeholder='email' id=""/>
+                        <input type="email" name="email" placeholder='Email' id=""/>
                     </FadeInWhenVisible>
                     <FadeInWhenVisible delay={.6}>
                         <button>submit</button>

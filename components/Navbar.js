@@ -59,12 +59,7 @@ const Navbar = () => {
                     className={`${open
                     ? styles.list + " " + styles.open
                     : styles.list}`}
-                    onClick={() => setOpen(false)}
-                    style={{
-                    right: open
-                        ? "0px"
-                        : "-100vw"
-                }}>
+                    onClick={() => setOpen(false)}>
                     {menu.map((item, index) => <li className={styles.listItem} key={index}>
                         <Link href={item.path} passHref>
                             <a
