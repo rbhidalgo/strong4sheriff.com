@@ -1,9 +1,9 @@
-import styles from "../styles/Navbar.module.scss"
-import Link from "next/link"
+import styles from "../styles/Navbar.module.scss";
+import Link from "next/link";
 import Image from "next/image";
 import {useRouter} from 'next/router';
 import {useState, useEffect} from "react"
-import Logo from "../components/Logo"
+import Logo from "../components/Logo";
 
 const menu = [
     {

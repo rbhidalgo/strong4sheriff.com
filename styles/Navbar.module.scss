@@ -125,7 +125,9 @@
 
         .donate {
             margin-left: auto;
-            margin-right: 50px;
+        }
+        &.scrolled {
+          padding: 25px;
         }
     }
 }
@@ -133,6 +135,10 @@
 @include bp(tb) {
     .navContainer {
         padding: 20px;
+
+        .donate {
+          margin-right: 50px;
+        }
 
         .list {
             // display: none;
@@ -174,15 +180,15 @@
 
         .social {
             display: none;
-            &.open {
-                display: flex;
-                margin-right: 0;
-                position: absolute;
-                top: 25px;
-                left: 50%;
-                transform: translateX(-50%);
-                z-index: 10000;
-            }
+            // &.open {
+            //     display: flex;
+            //     margin-right: 0;
+            //     position: absolute;
+            //     top: 25px;
+            //     left: 50%;
+            //     transform: translateX(-50%);
+            //     z-index: 10000;
+            // }
         }
 
         .hamburger {
@@ -198,7 +204,9 @@
 
                     // background-color: #ffffff;
                     &:nth-child(2) {
-                        display: none;
+                        width: 0;
+                        height: 0;
+                        opacity: 0;
                     }
 
                     &:nth-child(1) {
@@ -206,7 +214,7 @@
                     }
 
                     &:nth-child(3) {
-                        transform: rotate(45deg) translateY(-4px) translate(-8px);
+                        transform: rotate(45deg) translateY(-6px) translate(-8px);
                     }
                 }
 
