@@ -105,7 +105,13 @@ export default function Home() {
                     culture that has allowed deputy gangs to fester. Together, we can and will make
                     this a world-class department that will enhance safety and justice, and make Los
                     Angeles County proud.”<br/>
-                    <span className={styles.small}>— Eric Strong</span>
+                    <motion.img
+                    src="/img/light-signature.png"
+                    alt="Eric Strong Signature"
+                    initial="initial"
+                    animate="animate"
+                    variants={fadeIn}/>
+                    {/* <span className={styles.small}>— Eric Strong</span> */}
                 </p>
                 <div className={styles.mw800}>
                     <div className={styles.videoContainer}>

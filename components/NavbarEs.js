@@ -3,27 +3,24 @@ import Link from "next/link";
 import Image from "next/image";
 import {useRouter} from 'next/router';
 import {useState, useEffect} from "react"
-import Logo from "../components/Logo";
+import Logo from "./Logo";
 
 const menu = [
     {
-        title: 'About',
-        path: '/about/'
+        title: 'Acerca',
+        path: '/es/about'
     }, {
         title: 'Priorities',
-        path: '/priorities/'
+        path: '/es/priorities'
     }, {
-        title: 'Endorsements',
-        path: '/endorsements/'
+        title: 'Noticias',
+        path: '/es/in-the-news'
     }, {
-        title: 'Get Involved',
-        path: '/get-involved/'
-    },{
-        title: 'Media',
-        path: '/media/'
+        title: 'Press',
+        path: '/es/press-releases'
     }, {
         title: 'Contact',
-        path: '/contact/'
+        path: '/es/contact'
     }
 ]
 
@@ -74,8 +71,7 @@ const Navbar = () => {
                         </Link>
                     </li>)}
                 </ul>
-                <div
-                    className={`${open
+                <div className={`${open
                     ? styles.social + " " + styles.open
                     : styles.social}`}>
                     <a
@@ -97,22 +93,17 @@ const Navbar = () => {
                         <Image src="/img/icon-ig.png" width={45} height={43} alt=""/>
                     </a>
                 </div>
-                <a
-                    href="https://secure.actblue.com/donate/ericstrong-digital_website"
-                    target="_blank"
-                    rel="noreferrer"
-                    className={styles.donate}>DONATE</a>
-                <Link
-                    href={router.pathname === "/es"
-                    ? "/"
-                    : '/es'}
-                    passHref>
-                    <a className={styles.lang}>
-                        {router.pathname === "/es"
-                            ? "ENGLISH"
-                            : 'ESPAÑOL'}
-                    </a>
-                </Link>
+                <a href="https://secure.actblue.com/donate/ericstrong-digital_website" target="_blank" rel="noreferrer" className={styles.donate}>DONATE</a>
+                <Link href={router.pathname === "/es"
+                                ? "/"
+                                : '/es'} passHref>
+                            <a
+                                className={styles.lang}>
+                                {router.pathname === "/es"
+                                ? "ENGLISH"
+                                : 'ESPAÑOL'}
+                            </a>
+                        </Link>
                 <div
                     className={`${open
                     ? styles.hamburger + " " + styles.open
