@@ -1,6 +1,6 @@
-import styles from '../styles/Home.module.scss'
+import styles from '../../styles/Home.module.scss'
 import {motion} from 'framer-motion';
-import {fadeInUp, fadeIn, stagger, FadeInWhenVisible, FadeInLeftWhenVisible, FadeInRightWhenVisible} from '../animations/animations';
+import {fadeInUp, fadeIn, stagger, FadeInWhenVisible, FadeInLeftWhenVisible} from '../../animations/animations';
 import Link from "next/link";
 
 export default function Home() {
@@ -17,15 +17,17 @@ export default function Home() {
                     initial="initial"
                     animate="animate"
                     variants={fadeIn}/>
-                    <FadeInRightWhenVisible>
-                <div className={styles.textContainer}>
-                    <h1>Vote Eric Strong for a safer and more just Los Angeles County for all people.</h1>
+                <motion.div
+                    initial="initial"
+                    animate="animate"
+                    variants={fadeInUp}
+                    className={styles.textContainer}>
+                    <h1>Vote por Eric Strong por un condado de Los Ángeles más seguro y más justo para todas las personas.</h1>
                     <Link href="/about">
                         <a className={styles.buttonInvert}>
-                            Meet Eric</a>
+                        Conoce a Eric</a>
                     </Link>
-                </div>
-                </FadeInRightWhenVisible>
+                </motion.div>
             </motion.section>
             <motion.section
                 initial="initial"
@@ -44,16 +46,16 @@ export default function Home() {
                     method="POST"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field">
-                    <FadeInWhenVisible>
+                    <FadeInLeftWhenVisible>
                         <input type="text" name="name" placeholder='Name' id=""/>
-                    </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={.3}>
+                    </FadeInLeftWhenVisible>
+                    <FadeInLeftWhenVisible delay={.3}>
                         <input type="email" name="email" placeholder='Email' id=""/>
-                    </FadeInWhenVisible>
+                    </FadeInLeftWhenVisible>
                     <input type="hidden" name="contact" value="contact"/>
-                    <FadeInWhenVisible delay={.6}>
+                    <FadeInLeftWhenVisible delay={.6}>
                         <button>submit</button>
-                    </FadeInWhenVisible>
+                    </FadeInLeftWhenVisible>
                 </form>
             </motion.section>
 
@@ -74,9 +76,9 @@ export default function Home() {
                         variants={fadeIn}/>
                 </div>
                 <div className={styles.textCol}>
-                <FadeInLeftWhenVisible>
+                <FadeInLeftWhenVisible delay={.3}>
                     <h2>Get to Know Eric Strong</h2>
-                    
+                    </FadeInLeftWhenVisible>
                     <p>Over his nearly 30-years in law enforcement, Eric Strong has led units across
                         virtually every function of the L.A. County Sheriff’s Department, from patrol to
                         courts, custody, investigations, internal affairs, risk management and auditing.</p>
@@ -88,7 +90,6 @@ export default function Home() {
                         <a className={styles.button}>
                             Learn more about Eric</a>
                     </Link>
-                    </FadeInLeftWhenVisible>
                 </div>
             </motion.section>
 
@@ -124,5 +125,5 @@ export default function Home() {
     )
 }
 
-Home.title = 'Eric Strong for Los Angeles County Sheriff'
+Home.title = 'Eric Strong para el alguacil del condado de Los Ángeles'
 Home.description = 'Eric Strong for Los Angeles County Sheriff'

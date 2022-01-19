@@ -93,7 +93,17 @@ const Navbar = () => {
                         <Image src="/img/icon-ig.png" width={45} height={43} alt=""/>
                     </a>
                 </div>
-                <a href="" className={styles.donate}>DONATE</a>
+                <a href="https://secure.actblue.com/donate/ericstrong-digital_website" target="_blank" rel="noreferrer" className={styles.donate}>DONATE</a>
+                {/* <Link href={router.pathname === "/es"
+                                ? "/"
+                                : '/es'} passHref>
+                            <a
+                                className={styles.lang}>
+                                {router.pathname === "/es"
+                                ? "ENGLISH"
+                                : 'ESPAÑOL'}
+                            </a>
+                        </Link> */}
                 <div
                     className={`${open
                     ? styles.hamburger + " " + styles.open

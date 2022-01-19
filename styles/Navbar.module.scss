@@ -56,11 +56,12 @@
         }
     }
 
-    .donate {
+    .donate, .lang {
         text-decoration: none;
         padding: 8px 10px;
         background: $color-primary;
         color: #ffffff;
+        font-size: 15px;
         font-weight: 800;
         transition: all 0.4s ease;
 
@@ -68,7 +69,11 @@
             background: $color-secondary;
             color: $color-primary;
         }
-    }
+      }
+      .lang {
+        background: #000000;
+        margin-left: 12px;
+      }
 
     &.scrolled {
         background-color: rgba(0, 0, 0, 0.85);
@@ -136,7 +141,7 @@
     .navContainer {
         padding: 20px;
 
-        .donate {
+        .lang {
           margin-right: 50px;
         }
 

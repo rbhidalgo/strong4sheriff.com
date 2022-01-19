@@ -23,6 +23,24 @@ const fadeInUp = {
         }
     }
 };
+const fadeInLeft = {
+    initial: {
+        x: -60,
+        opacity: 0,
+        transition: {
+            duration: 0.8,
+            ease: easing,
+        }
+    },
+    animate: {
+        x: 0,
+        opacity: 1,
+        transition: {
+            duration: 0.8,
+            ease: easing
+        }
+    }
+};
 
 const fadeIn = {
     initial: {
@@ -75,4 +93,58 @@ function FadeInWhenVisible({children, delay}) {
         </motion.div>
     );
 }
-export {easing, fadeInUp, stagger, FadeInWhenVisible, fadeIn};
+
+function FadeInLeftWhenVisible({children, delay}) {
+    return (
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+            once: true
+        }}
+            transition={{
+            duration: 0.8,
+            delay: delay
+        }}
+            variants={{
+            visible: {
+                opacity: 1,
+                x: 0
+            },
+            hidden: {
+                opacity: 0,
+                x: 100
+            }
+        }}>
+            {children}
+        </motion.div>
+    );
+}
+
+function FadeInRightWhenVisible({children, delay}) {
+    return (
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+            once: true
+        }}
+            transition={{
+            duration: 0.8,
+            delay: delay
+        }}
+            variants={{
+            visible: {
+                opacity: 1,
+                x: 0
+            },
+            hidden: {
+                opacity: 0,
+                x: -100
+            }
+        }}>
+            {children}
+        </motion.div>
+    );
+}
+export {easing, fadeInUp, fadeInLeft, stagger, FadeInWhenVisible, FadeInLeftWhenVisible, FadeInRightWhenVisible, fadeIn};
