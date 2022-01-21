@@ -1,3 +1,4 @@
+import JoinCta from '../components/JoinCta'
 import styles from '../styles/Media.module.scss'
 import {motion} from "framer-motion";
 import Link from "next/link";
@@ -35,36 +36,7 @@ const Media = () => {
                     </div>
                 </FadeInRightWhenVisible>
             </motion.section>
-            <motion.section
-                initial="initial"
-                animate="animate"
-                variants={fadeInUp}
-                className={styles.cta}>
-                <motion.h2
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                    once: true
-                }}
-                    variants={fadeInUp}>Join The Movement</motion.h2>
-                <form
-                    name="join-team"
-                    method="POST"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field">
-                    <FadeInWhenVisible>
-                        <input type="text" name="name" placeholder='Name' id=""/>
-                    </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={.3}>
-                        <input type="email" name="email" placeholder='Email' id=""/>
-                    </FadeInWhenVisible>
-                    <input type="hidden" name="contact" value="contact"/>
-                    <FadeInWhenVisible delay={.6}>
-                        <button>submit</button>
-                    </FadeInWhenVisible>
-                </form>
-            </motion.section>
-
+            <JoinCta/>
             <motion.section
                 className={styles.media}
                 initial="initial"

@@ -67,7 +67,7 @@ const stagger = {
     }
 };
 
-function FadeInWhenVisible({children, delay}) {
+function FadeInWhenVisible({children, delay, className}) {
     return (
         <motion.div
             initial="hidden"
@@ -88,7 +88,7 @@ function FadeInWhenVisible({children, delay}) {
                 opacity: 0,
                 scale: 0
             }
-        }}>
+        }}className={className}>
             {children}
         </motion.div>
     );

@@ -1,6 +1,14 @@
+import JoinCta from '../components/JoinCta'
 import styles from '../styles/Home.module.scss'
 import {motion} from 'framer-motion';
-import {fadeInUp, fadeIn, stagger, FadeInWhenVisible, FadeInLeftWhenVisible, FadeInRightWhenVisible} from '../animations/animations';
+import {
+    fadeInUp,
+    fadeIn,
+    stagger,
+    FadeInWhenVisible,
+    FadeInLeftWhenVisible,
+    FadeInRightWhenVisible
+} from '../animations/animations';
 import Link from "next/link";
 
 export default function Home() {
@@ -17,46 +25,17 @@ export default function Home() {
                     initial="initial"
                     animate="animate"
                     variants={fadeIn}/>
-                    <FadeInRightWhenVisible>
-                <div className={styles.textContainer}>
-                    <h1>Vote Eric Strong for a safer and more just Los Angeles County for all people.</h1>
-                    <Link href="/about">
-                        <a className={styles.buttonInvert}>
-                            Meet Eric</a>
-                    </Link>
-                </div>
+                <FadeInRightWhenVisible>
+                    <div className={styles.textContainer}>
+                        <h1>Vote Eric Strong for a safer and more just Los Angeles County for all people.</h1>
+                        <Link href="/about">
+                            <a className={styles.buttonInvert}>
+                                Meet Eric</a>
+                        </Link>
+                    </div>
                 </FadeInRightWhenVisible>
             </motion.section>
-            <motion.section
-                initial="initial"
-                animate="animate"
-                variants={fadeInUp}
-                className={styles.cta}>
-                <motion.h2
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                    once: true
-                }}
-                    variants={fadeInUp}>Join The Movement</motion.h2>
-                <form
-                    name="join-team"
-                    method="POST"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field">
-                    <FadeInWhenVisible>
-                        <input type="text" name="name" placeholder='Name' id=""/>
-                    </FadeInWhenVisible>
-                    <FadeInWhenVisible delay={.3}>
-                        <input type="email" name="email" placeholder='Email' id=""/>
-                    </FadeInWhenVisible>
-                    <input type="hidden" name="contact" value="contact"/>
-                    <FadeInWhenVisible delay={.6}>
-                        <button>submit</button>
-                    </FadeInWhenVisible>
-                </form>
-            </motion.section>
-
+            <JoinCta/>
             <motion.section
                 className={styles.twoCol}
                 initial="initial"
@@ -74,20 +53,20 @@ export default function Home() {
                         variants={fadeIn}/>
                 </div>
                 <div className={styles.textCol}>
-                <FadeInLeftWhenVisible>
-                    <h2>Get to Know Eric Strong</h2>
-                    
-                    <p>Over his nearly 30-years in law enforcement, Eric Strong has led units across
-                        virtually every function of the L.A. County Sheriff’s Department, from patrol to
-                        courts, custody, investigations, internal affairs, risk management and auditing.</p>
-                    <p>While his professional experience sets him apart, Eric’s personal experience
-                        as a victim of crime, someone who has been profiled by police, and who has
-                        family members who have been incarcerated and even killed by law enforcement, is
-                        what enables him to lead LA County at this critical time.</p>
-                    <Link href="/about">
-                        <a className={styles.button}>
-                            Learn more about Eric</a>
-                    </Link>
+                    <FadeInLeftWhenVisible>
+                        <h2>Get to Know Eric Strong</h2>
+
+                        <p>Over his nearly 30-years in law enforcement, Eric Strong has led units across
+                            virtually every function of the L.A. County Sheriff’s Department, from patrol to
+                            courts, custody, investigations, internal affairs, risk management and auditing.</p>
+                        <p>While his professional experience sets him apart, Eric’s personal experience
+                            as a victim of crime, someone who has been profiled by police, and who has
+                            family members who have been incarcerated and even killed by law enforcement, is
+                            what enables him to lead LA County at this critical time.</p>
+                        <Link href="/about">
+                            <a className={styles.button}>
+                                Learn more about Eric</a>
+                        </Link>
                     </FadeInLeftWhenVisible>
                 </div>
             </motion.section>
@@ -106,12 +85,11 @@ export default function Home() {
                     this a world-class department that will enhance safety and justice, and make Los
                     Angeles County proud.”<br/>
                     <motion.img
-                    src="/img/light-signature.png"
-                    alt="Eric Strong Signature"
-                    initial="initial"
-                    animate="animate"
-                    variants={fadeIn}/>
-                    {/* <span className={styles.small}>— Eric Strong</span> */}
+                        src="/img/light-signature.png"
+                        alt="Eric Strong Signature"
+                        initial="initial"
+                        animate="animate"
+                        variants={fadeIn}/> {/* <span className={styles.small}>— Eric Strong</span> */}
                 </p>
                 <div className={styles.mw800}>
                     <div className={styles.videoContainer}>

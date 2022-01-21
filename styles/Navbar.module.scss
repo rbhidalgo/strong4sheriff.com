@@ -101,6 +101,27 @@
     }
 }
 
+.whiteNav {
+  .navContainer {
+    .list {
+        .listItem {
+            a {
+                color: #ffffff;
+                &:hover {
+                    color: $color-primary;
+                }
+                &.active {
+                    color: $color-primary;
+                }
+            }
+        }
+    }
+    .logo {
+      fill: #ffffff;
+    }
+  }
+}
+
 .hamburger {
     display: none;
 }

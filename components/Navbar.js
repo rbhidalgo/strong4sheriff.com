@@ -8,22 +8,22 @@ import Logo from "../components/Logo";
 const menu = [
     {
         title: 'About',
-        path: '/about/'
+        path: '/about'
     }, {
         title: 'Priorities',
-        path: '/priorities/'
+        path: '/priorities'
     }, {
         title: 'Endorsements',
-        path: '/endorsements/'
+        path: '/endorsements'
     }, {
         title: 'Get Involved',
-        path: '/get-involved/'
+        path: '/get-involved'
     },{
         title: 'Media',
-        path: '/media/'
+        path: '/media'
     }, {
         title: 'Contact',
-        path: '/contact/'
+        path: '/contact'
     }
 ]
 
@@ -48,7 +48,9 @@ const Navbar = () => {
     });
 
     return (
-        <header>
+        <header className={`${router.pathname === '/about'
+          ? styles.whiteNav
+          : ''}`}>
             <nav
                 className={`${navbar
                 ? styles.navContainer + " " + styles.scrolled
