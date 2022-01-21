@@ -175,20 +175,8 @@
   }
 }
 
-.toggleMe {
-  flex-basis: 100%;
-  transition: all .8s ease;
-  &.on {
-    // display: block;
-    opacity: 1;
-    height: 100%;
-    transform: translateY(0%);
-  }
-  &.off {
-    transition: all .8s ease;
-    // display: none;
-    transform: translateY(-100%);
-    opacity: 0;
-    height: 0;
+.content {
+  ul {
+    padding: 50px;
   }
 }

@@ -1,0 +1,36 @@
+.readMore {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  .arrow {
+    display: inline-block;
+    transition: all .4s ease;
+    margin-left: 10px;
+    font-size: 20px;
+    line-height: 1;
+    &.on {
+      transform: rotate(90deg);
+      transform-origin: center;
+    }
+  }
+}
+
+.toggleMe {
+  flex-basis: 100%;
+  position: relative;
+  transition: all .8s ease;
+  // display: none;
+  &.on {
+    // display: block;
+    opacity: 1;
+    height: 100%;
+    top: 0;
+    transform: translateY(0%);
+  }
+  &.off {
+    transform: translateY(-100%);
+    top: -100%;
+    opacity: 0;
+    height: 0;
+  }
+}
