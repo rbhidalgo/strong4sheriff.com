@@ -129,6 +129,7 @@
     .twoCol {
       background: #ffffff;
       margin-bottom: 75px;
+      transition: all .4s ease;
       @include bp(tb) {
         margin-bottom: 25px;
       }

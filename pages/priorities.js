@@ -9,9 +9,12 @@ const Priorities = () => {
         setToggleMe] = useState(false);
     const [index,
         setIndex] = useState(0);
+
     function toggle(i) {
+      setIndex(i);
+      if(i === index) {
         setToggleMe(!toggleMe);
-        setIndex(i);
+      }
     }
 
     return (
@@ -127,8 +130,8 @@ const Priorities = () => {
                                     }
                                 }}
                                     transition={{
-                                    duration: 0.8,
-                                    ease: [0.04, 0.62, 0.23, 0.98]
+                                    duration: 0.3,
+                                    ease: "linear"
                                 }}>
                                     <ul>
                                         <li>Acknowledge the existence of deputy gangs within the department and move
@@ -200,8 +203,8 @@ const Priorities = () => {
                                     }
                                 }}
                                     transition={{
-                                    duration: 0.8,
-                                    ease: [0.04, 0.62, 0.23, 0.98]
+                                    duration: 0.3,
+                                    ease: "linear"
                                 }}>
                                     <ul>
                                         <li>Be the first elected Sheriff in history to support not building a new Men’s
@@ -269,8 +272,8 @@ const Priorities = () => {
                                     }
                                 }}
                                     transition={{
-                                    duration: 0.8,
-                                    ease: [0.04, 0.62, 0.23, 0.98]
+                                    duration: 0.3,
+                                    ease: "linear"
                                 }}>
                                     <ul>
                                     <li>Change use of force policies and the use of lethal weapons tactics to ensure
@@ -344,8 +347,8 @@ const Priorities = () => {
                                     }
                                 }}
                                     transition={{
-                                    duration: 0.8,
-                                    ease: [0.04, 0.62, 0.23, 0.98]
+                                    duration: 0.3,
+                                    ease: "linear"
                                 }}>
                                     <ul>
                                     <li>Use modern crime fighting tactics that focus on the most prolific offenders.
@@ -425,8 +428,8 @@ const Priorities = () => {
                                     }
                                 }}
                                     transition={{
-                                    duration: 0.8,
-                                    ease: [0.04, 0.62, 0.23, 0.98]
+                                    duration: 0.3,
+                                    ease: "linear"
                                 }}>
                                     <ul>
 
