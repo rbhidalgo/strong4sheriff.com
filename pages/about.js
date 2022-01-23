@@ -37,16 +37,16 @@ const about = () => {
             </motion.section>
             <JoinCta />
             <motion.section
-                className={styles.twoCol}
+                className={styles.fullLeft}
                 initial="initial"
                 whileInView="animate"
                 viewport={{
                 once: true
             }}
                 variants={fadeInUp}>
-                <div className={styles.imgCol}>
+                <div className={styles.fullImg}>
                     <motion.img
-                        src="/img/feat_02.jpg"
+                        src="/img/full-feat_01.jpg"
                         alt="Picture of Los Angeles"
                         initial="initial"
                         animate="animate"
@@ -72,7 +72,7 @@ const about = () => {
                 </div>
             </motion.section>
             <motion.section
-                className={styles.twoCol}
+                className={styles.fullRight}
                 initial="initial"
                 whileInView="animate"
                 viewport={{
@@ -93,9 +93,9 @@ const about = () => {
                             County Sheriff’s Department. They have three kids ages 24, 22 and 21.</p>
                     </FadeInRightWhenVisible>
                 </div>
-                <div className={styles.imgColRight}>
+                <div className={styles.fullImg}>
                     <motion.img
-                        src="/img/feat_03.jpg"
+                        src="/img/full-feat_02.jpg"
                         alt="Picture of Los Angeles"
                         initial="initial"
                         animate="animate"

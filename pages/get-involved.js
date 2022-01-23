@@ -3,11 +3,8 @@ import {motion} from "framer-motion";
 import {
     fadeInUp,
     fadeIn,
-    stagger,
     FadeInWhenVisible,
-    fadeInLeft,
     FadeInRightWhenVisible,
-    FadeInLeftWhenVisible
 } from '../animations/animations';
 
 const GetInvolved = () => {

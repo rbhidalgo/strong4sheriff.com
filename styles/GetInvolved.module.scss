@@ -55,7 +55,7 @@
   align-items: center;
   flex-wrap: wrap;
   min-height: 30vh;
-  padding: 30px 50px;
+  padding: 100px 50px;
   background-color: $color-primary;
   color: #ffffff;
   position: relative;
@@ -80,25 +80,28 @@
     @include bp(tb) {
       justify-content: center;
       flex-direction: column;
+      width: 100%;
     }
-    input {
-      padding: 8px 10px;
-      margin: 10px;
-      border-width: 0;
-      font-size: 16px;
+    div {
+      width: 48%;
+      margin-bottom: 20px;
       @include bp(tb) {
-        margin: 5px 10px 0 0;
-        // flex-basis: 33.333%;
+        width: 100%;
       }
-      @include bp(mb) {
-        margin: 5px 0 0 0;
+      input {
+        padding: 8px 10px;
+        border-width: 0;
+        font-size: 16px;
+        min-height: 50px;
+        width: 100%;
       }
     }
     button {
       background-color: $color-secondary;
       color: $color-primary;
       text-transform: uppercase;
-      padding: 8px 10px;
+      min-height: 50px;
+      padding: 8px 24px;
       font-weight: 800;
       border-width: 0;
       font-size: 16px;

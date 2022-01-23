@@ -48,7 +48,7 @@ const Navbar = () => {
     });
 
     return (
-        <header className={`${router.pathname === '/about'
+        <header className={`${router.pathname === '/about' || router.pathname === '/endorsements'
           ? styles.whiteNav
           : ''}`}>
             <nav
@@ -111,8 +111,8 @@ const Navbar = () => {
                     passHref>
                     <a className={styles.lang}>
                         {router.pathname === "/es"
-                            ? "ENGLISH"
-                            : 'ESPAÑOL'}
+                            ? "EG"
+                            : 'ES'}
                     </a>
                 </Link>
                 <div

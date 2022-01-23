@@ -116,6 +116,9 @@
         }
         @include bp(dt) {
           padding: 50px;
+          &:first-child {
+            padding-bottom: 0;
+          }
         }
       }
     }

@@ -49,7 +49,7 @@ const Priorities = () => {
                 variants={fadeInUp}>
                 <div className={styles.imgCol}>
                     <motion.img
-                        src="/img/feat_01.jpg"
+                        src="/img/full-feat_09.jpg"
                         alt="Picture of Los Angeles"
                         initial="initial"
                         animate="animate"
@@ -80,42 +80,50 @@ const Priorities = () => {
                 once: true
             }}
                 variants={fadeInUp}>
-                <h2 className={styles.title}>Accountability, Transparency, Leadership</h2>
+                {/* <h2 className={styles.title}>Accountability, Transparency, Leadership</h2> */}
                 <div className={styles.cards}>
                     <motion.div
-                        className={styles.twoCol}
+                        className={styles.fullRow + ' ' + styles.dark}
                         initial="initial"
                         whileInView="animate"
                         viewport={{
                         once: true
                     }}
                         variants={fadeInUp}>
-                        <div className={styles.imgCol}>
+                        <div className={styles.fullImg + ' ' + styles.left}>
                             <motion.img
-                                src="/img/feat_04.jpg"
+                                src="/img/full-feat_03.jpg"
                                 alt="Picture of Los Angeles"
                                 initial="initial"
                                 animate="animate"
                                 variants={fadeIn}/>
                         </div>
-                        <div className={styles.textCol}>
+                        <div className={styles.textCol + ' ' + styles.textRight}>
                             <FadeInLeftWhenVisible>
                                 <h2>Deputy Gangs and LASD's Dated Culture</h2>
                                 <p>Eric is the only candidate that has led investigations into incidents
-                                    involving deputy gangs which have led to multiple terminations. As Sheriff, Eric
-                                    will:</p>
+                                    involving deputy gangs which have led to multiple terminations.</p>
+                                <p>As Sheriff, Eric will:</p>
+                                <ul>
+                                <li>Acknowledge the existence of deputy gangs within the department and move
+                                            decisively to eliminate them by banning the groups outright and implementing
+                                            recommendations from the Sheriff’s Citizens Advisory Committee and Office of the
+                                            Inspector General.</li>
+                                </ul>
                                 <p onClick={() => toggle(0)} className={styles.readMore}>Read More
                                     <span
-                                        className={`${toggleMe
+                                        className={`${toggleMe && index === 0 
                                         ? styles.on + ' ' + styles.arrow
                                         : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
                                 </p>
                             </FadeInLeftWhenVisible>
                         </div>
+
+                    </motion.div>
                         <AnimatePresence initial={false}>
                             {toggleMe && index === 0 && (
                                 <motion.section
-                                    className={styles.content}
+                                    className={styles.content + ' ' + styles.dark}
                                     initial="collapsed"
                                     animate="open"
                                     exit="collapsed"
@@ -134,10 +142,6 @@ const Priorities = () => {
                                     ease: "linear"
                                 }}>
                                     <ul>
-                                        <li>Acknowledge the existence of deputy gangs within the department and move
-                                            decisively to eliminate them by banning the groups outright and implementing
-                                            recommendations from the Sheriff’s Citizens Advisory Committee and Office of the
-                                            Inspector General.</li>
                                         <li>Implement policies to acknowledge and protect deputies who come forward to
                                             report department misconduct.
                                         </li>
@@ -152,43 +156,49 @@ const Priorities = () => {
                                 </motion.section>
                             )}
                         </AnimatePresence>
-
-                    </motion.div>
                     <motion.div
-                        className={styles.twoCol}
+                        className={styles.fullRow + ' ' + styles.light}
                         initial="initial"
                         whileInView="animate"
                         viewport={{
                         once: true
                     }}
                         variants={fadeInUp}>
-                        <div className={styles.imgCol}>
+                        <div className={styles.fullImg + ' ' + styles.right}>
                             <motion.img
-                                src="/img/feat_01.jpg"
+                                src="/img/full-feat_04.jpg"
                                 alt="Picture of Los Angeles"
                                 initial="initial"
                                 animate="animate"
                                 variants={fadeIn}/>
                         </div>
-                        <div className={styles.textCol}>
+                        <div className={styles.textCol + ' ' + styles.textLeft}>
                             <FadeInLeftWhenVisible>
                                 <h2>Alternatives to Incarceration</h2>
                                 <p>With family members that have been incarcerated, Eric understands how
                                     important it is that we right size the footprint of a sprawling criminal justice
-                                    system that often exacerbates recidivism, insecurity and homelessness. As
-                                    Sheriff, Eric will:</p>
+                                    system that often exacerbates recidivism, insecurity and homelessness.</p>
+                                <p>As Sheriff, Eric will:</p>    
+                                <ul>
+                                <li>Be the first elected Sheriff in history to support not building a new Men’s
+                                            Central Jail as approximately 1/3rd of the in-custody population has behavioral
+                                            and mental health challenges. By treating this population, we can better address
+                                            the behavioral health crisis on our streets, its connection to homelessness and
+                                            recidivism, and we can avoid building a costly new jail.</li>
+                                </ul>
                                 <p onClick={() => toggle(1)} className={styles.readMore}>Read More
                                     <span
-                                        className={`${toggleMe
+                                        className={`${toggleMe && index === 1
                                         ? styles.on + ' ' + styles.arrow
                                         : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
                                 </p>
                             </FadeInLeftWhenVisible>
                         </div>
+                    </motion.div>
                         <AnimatePresence initial={false}>
                             {toggleMe && index === 1 && (
                                 <motion.section
-                                    className={styles.content}
+                                    className={styles.content + ' ' + styles.light}
                                     initial="collapsed"
                                     animate="open"
                                     exit="collapsed"
@@ -207,11 +217,6 @@ const Priorities = () => {
                                     ease: "linear"
                                 }}>
                                     <ul>
-                                        <li>Be the first elected Sheriff in history to support not building a new Men’s
-                                            Central Jail as approximately 1/3rd of the in-custody population has behavioral
-                                            and mental health challenges. By treating this population, we can better address
-                                            the behavioral health crisis on our streets, its connection to homelessness and
-                                            recidivism, and we can avoid building a costly new jail.</li>
                                         <li>Work with and support the County’s Alternatives to Incarceration Initiative
                                             to keep people out of the criminal justice system.</li>
                                         <li>Work to break the cycle of addiction, petty crime, and homelessness by
@@ -222,42 +227,48 @@ const Priorities = () => {
                                 </motion.section>
                             )}
                         </AnimatePresence>
-                    </motion.div>
                     <motion.div
-                        className={styles.twoCol}
+                        className={styles.fullRow + ' ' + styles.dark}
                         initial="initial"
                         whileInView="animate"
                         viewport={{
                         once: true
                     }}
                         variants={fadeInUp}>
-                        <div className={styles.imgCol}>
+                        <div className={styles.fullImg + ' ' + styles.left}>
                             <motion.img
-                                src="/img/feat_01.jpg"
+                                src="/img/full-feat_05.jpg"
                                 alt="Picture of Los Angeles"
                                 initial="initial"
                                 animate="animate"
                                 variants={fadeIn}/>
                         </div>
-                        <div className={styles.textCol}>
+                        <div className={styles.textCol + ' ' + styles.textRight}>
                             <FadeInLeftWhenVisible>
                                 <h2>Use of Force</h2>
                                 <p>Jurisdictions with more restrictive use of force policies have fewer injuries
                                     to citizens and officers alike. When police unnecessarily and inappropriately
                                     use force we undermine trust in our community, and that makes everyone less
-                                    safe. As Sheriff, Eric will:</p>
+                                    safe.</p>
+                                <p>As Sheriff, Eric will:</p>
+                                <ul>
+                                <li>Change use of force policies and the use of lethal weapons tactics to ensure
+                                        police are using force when they must, not simply because they can.
+                                    </li>
+                                </ul>
                                     <p onClick={() => toggle(2)} className={styles.readMore}>Read More
                                     <span
-                                        className={`${toggleMe
+                                        className={`${toggleMe && index === 2
                                         ? styles.on + ' ' + styles.arrow
                                         : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
                                 </p>
                             </FadeInLeftWhenVisible>
                         </div>
+                    </motion.div>
                         <AnimatePresence initial={false}>
                             {toggleMe && index === 2 && (
                                 <motion.section
-                                    className={styles.content}
+                                    className={styles.content + ' ' + styles.dark}
                                     initial="collapsed"
                                     animate="open"
                                     exit="collapsed"
@@ -276,9 +287,6 @@ const Priorities = () => {
                                     ease: "linear"
                                 }}>
                                     <ul>
-                                    <li>Change use of force policies and the use of lethal weapons tactics to ensure
-                                        police are using force when they must, not simply because they can.
-                                    </li>
                                     <li>Attend the Citizens Advisory Committee listening sessions to ensure families
                                         and survivors of violent crimes and police violence are heard.</li>
                                     <li>Personally contact the family of any individual killed by an on-duty member
@@ -292,24 +300,23 @@ const Priorities = () => {
                                 </motion.section>
                             )}
                         </AnimatePresence>
-                    </motion.div>
                     <motion.div
-                        className={styles.twoCol}
+                        className={styles.fullRow + ' ' + styles.light}
                         initial="initial"
                         whileInView="animate"
                         viewport={{
                         once: true
                     }}
                         variants={fadeInUp}>
-                        <div className={styles.imgCol}>
+                        <div className={styles.fullImg + ' ' + styles.right}>
                             <motion.img
-                                src="/img/feat_01.jpg"
+                                src="/img/full-feat_06.jpg"
                                 alt="Picture of Los Angeles"
                                 initial="initial"
                                 animate="animate"
                                 variants={fadeIn}/>
                         </div>
-                        <div className={styles.textCol}>
+                        <div className={styles.textCol + ' ' + styles.textLeft}>
                             <FadeInLeftWhenVisible>
                                 <h2>Helping Victims and Reducing Crime</h2>
                                 <p>As Sheriff, Eric will:
@@ -317,22 +324,20 @@ const Priorities = () => {
                                 <ul>
                                     <li>Advocate for and work closely with modern violence reduction efforts rooted
                                         in data and science such as the use of gang intervention workers.</li>
-                                    <li>Partner with communities and other law enforcement agencies to find
-                                        solutions to neighborhood specific problems including vandalism and shoplifting.</li>
-                                    
                                 </ul>
                                 <p onClick={() => toggle(3)} className={styles.readMore}>Read More
                                     <span
-                                        className={`${toggleMe
+                                        className={`${toggleMe && index === 3
                                         ? styles.on + ' ' + styles.arrow
                                         : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
                                 </p>
                             </FadeInLeftWhenVisible>
                         </div>
+                    </motion.div>
                         <AnimatePresence initial={false}>
                             {toggleMe && index === 3 && (
                                 <motion.section
-                                    className={styles.content}
+                                    className={styles.content + ' ' + styles.light}
                                     initial="collapsed"
                                     animate="open"
                                     exit="collapsed"
@@ -351,6 +356,8 @@ const Priorities = () => {
                                     ease: "linear"
                                 }}>
                                     <ul>
+                                    <li>Partner with communities and other law enforcement agencies to find
+                                        solutions to neighborhood specific problems including vandalism and shoplifting.</li>
                                     <li>Use modern crime fighting tactics that focus on the most prolific offenders.
                                         That, in turn, will have an outsized impact on overall crime in our communities.</li>
                                     <li>Require deputies to undergo cultural competency training to ensure they are
@@ -366,54 +373,48 @@ const Priorities = () => {
                                 </motion.section>
                             )}
                         </AnimatePresence>
-                    </motion.div>
                     <motion.div
-                        className={styles.twoCol}
+                        className={styles.fullRow + ' ' + styles.primary}
                         initial="initial"
                         whileInView="animate"
                         viewport={{
                         once: true
                     }}
                         variants={fadeInUp}>
-                        <div className={styles.imgCol}>
+                        <div className={styles.fullImg + ' ' + styles.leftEric}>
                             <motion.img
-                                src="/img/feat_01.jpg"
+                                src="/img/full-feat_08.jpg"
                                 alt="Picture of Los Angeles"
                                 initial="initial"
                                 animate="animate"
                                 variants={fadeIn}/>
                         </div>
-                        <div className={styles.textCol}>
+                        <div className={styles.textCol + ' ' + styles.textRight}>
                             <FadeInLeftWhenVisible>
                                 <h2>Trust and Transparency</h2>
                                 <p>Respect is earned, it is not demanded. We must prove that the Los Angeles
                                     County Sheriff's Department deserves the community's trust by earning it, not
                                     demanding it. By letting the sunlight in, law enforcement can regain its stature
-                                    as a respected profession, and we can better serve the needs of our community.
-                                    As Sheriff, Eric will:</p>
+                                    as a respected profession, and we can better serve the needs of our community.</p>
+                                <p>As Sheriff, Eric will:</p>
                                     
                                 <ul>
                                     <li>Fast track the use of body worn cameras on all deputies engaging with the
                                         public.</li>
-
-                                    <li>Enhance transparency and provide data about LASD stops, arrests, in-custody
-                                        deaths, uses of force, homicides, sheriff’s deputies killed or injured in the
-                                        line of duty, lawsuits, hate crimes, civilian complaints, deployment of
-                                        less-lethal weapons, use of drones, use of canines and other key areas on the
-                                        LASD website.</li>
                                 </ul>
-                                <p onClick={() => toggle(4)} className={styles.readMore}>Read More
+                                <p onClick={() => toggle(4)} className={styles.readMore + ' ' + styles.light}>Read More
                                     <span
-                                        className={`${toggleMe
+                                        className={`${toggleMe && index === 4
                                         ? styles.on + ' ' + styles.arrow
                                         : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
                                 </p>
                             </FadeInLeftWhenVisible>
                         </div>
+                    </motion.div>
                         <AnimatePresence initial={false}>
                             {toggleMe && index === 4 && (
                                 <motion.section
-                                    className={styles.content}
+                                    className={styles.content + ' ' + styles.primary}
                                     initial="collapsed"
                                     animate="open"
                                     exit="collapsed"
@@ -432,6 +433,11 @@ const Priorities = () => {
                                     ease: "linear"
                                 }}>
                                     <ul>
+                                    <li>Enhance transparency and provide data about LASD stops, arrests, in-custody
+                                        deaths, uses of force, homicides, sheriff’s deputies killed or injured in the
+                                        line of duty, lawsuits, hate crimes, civilian complaints, deployment of
+                                        less-lethal weapons, use of drones, use of canines and other key areas on the
+                                        LASD website.</li>
 
                                     <li>Work with the Board of Supervisors to call a hearing on the effectiveness,
                                         efficacy, and costs of the department’s contract cities program to both LASD and
@@ -475,7 +481,6 @@ const Priorities = () => {
                                 </motion.section>
                             )}
                         </AnimatePresence>
-                    </motion.div>
                 </div>
             </motion.section>
         </motion.div>

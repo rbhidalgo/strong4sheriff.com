@@ -1,0 +1,244 @@
+@import "mixins";
+@import "variables";
+
+.masthead {
+    height: 90vh;
+    min-height: 100%;
+    max-height: 1100px;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    @include bp(tb) {
+        max-height: 550px;
+    }
+    @include bp(mb) {
+        align-items: flex-end;
+        &::after {
+            position: absolute;
+            content: "";
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.25) 70%, #272627 98%);
+        }
+    }
+    img {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 75% 50%;
+        @include bp(ws) {
+            object-position: 60% 50%;
+        }
+        @include bp(mb) {
+            object-position: 90% 50%;
+        }
+    }
+    .textContainer {
+        position: relative;
+        z-index: 5;
+        padding: 0 75px;
+        max-width: 59%;
+        @include bp(dt) {
+            padding: 130px 25px;
+            max-width: 60%;
+        }
+        @include bp(tb) {
+            padding: 0 20px;
+        }
+        @include bp(mb) {
+            max-width: unset;
+        }
+        p {
+            margin-bottom: 10px;
+            color: $color-primary;
+            @include bp(tb) {
+                margin-bottom: 20px;
+            }
+        }
+        h1 {
+            font-size: clamp(28px, 4vw, 100px);
+            color: #ffffff;
+            font-weight: 600;
+            line-height: 1.2;
+            margin-bottom: 50px;
+            @include bp(tb) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+.container {
+    padding-right: 75px;
+    padding-left: 75px;
+    @include bp(dt) {
+        padding-right: 25px;
+        padding-left: 25px;
+    }
+    @include bp(tb) {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+.top_donors {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include bp(tb) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    &_grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 50px;
+        @include bp(ws) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+        @include bp(dt) {
+            gap: 25px;
+        }
+        @include bp(tb) {
+            gap: 20px;
+        }
+    }
+    &_donor {
+        text-align: center;
+        grid-column: span 1;
+        &__image {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            height: 250px;
+            width: 250px;
+            border-radius: 9999px;
+            overflow: hidden;
+            margin-bottom: 20px;
+            @include bp(tb) {
+                height: 150px;
+                width: 150px;
+            }
+            img {
+                object-fit: cover;
+            }
+        }
+        &__text {
+            h3 {
+                color: $color-primary;
+                font-weight: 800;
+            }
+        }
+    }
+}
+
+.quote {
+    background: $color-primary;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 1.6;
+    font-size: clamp(20px, 3vw, 24px);
+    @include bp(tb) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .small {
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+}
+
+.med_donors {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    @include bp(tb) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    h2 {
+        text-align: center;
+        font-weight: 800;
+        line-height: 1.3;
+        font-size: clamp(20px, 3vw, 24px);
+        margin-bottom: 50px;
+    }
+    &_grid {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+    }
+    .med_donor {
+        flex: 0 25%;
+        text-align: center;
+        padding: 25px;
+        @include bp(dt) {
+            flex: 0 33%;
+        }
+        @include bp(tb) {
+            flex: 0 50%;
+            padding: 20px;
+        }
+        @include bp(mb) {
+            padding: 10px;
+        }
+        h2 {
+            margin-bottom: 0;
+            font-size: initial;
+        }
+        p {
+            font-size: 14px;
+            color: $color-primary;
+            @include bp(mb) {
+                font-size: 12px;
+            }
+        }
+    }
+}
+
+.sm_donors {
+    padding-bottom: 100px;
+    padding-top: 100px;
+    background: $color-primary;
+    text-align: center;
+    color: #ffffff;
+    font-size: clamp(20px, 3vw, 24px);
+    @include bp(tb) {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .border_bottom {
+      margin-bottom: 50px;
+      padding-bottom: 50px;
+      border-bottom: 1px solid white;
+      .small {
+          font-size: 15px;
+          font-weight: 300;
+          text-transform: uppercase;
+      }
+    }
+    &_grid {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .sm_donor_list {
+        flex: 1;
+        text-align: left;
+        column-count: 4;
+        column-gap: 50px;
+        padding-inline-start: 30px;
+        @include bp(tb) {
+          column-count: 2;
+        }
+        &_item {
+          font-size: 16px;
+        }
+      }
+    }
+}

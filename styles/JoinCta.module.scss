@@ -13,6 +13,7 @@
   z-index: 1;
   @include bp(tb) {
     padding: 25px 50px;
+    flex-direction: column;
     justify-content: center;
   }
   h2 {
@@ -30,23 +31,28 @@
     flex-wrap: wrap;
     flex: 2;
     @include bp(tb) {
-      justify-content: center;
-    }
-    @include bp(mb) {
       flex-direction: column;
+      justify-content: center;
+      flex: unset;
+      width: 100%;
     }
     .wrapper {
       flex: 1;
-      margin: 0 10px;
+      margin: 0 15px;
+      @include bp(tb) {
+        flex: unset;
+        width: 100%;
+      }
     }
     .wrapperButton {
-      margin: 0 10px;
+      margin: 0 15px;
     }
     input {
       padding: 8px 10px;
       margin: 10px;
       border-width: 0;
       font-size: 16px;
+      min-height: 50px;
       width: 100%;
       @include bp(tb) {
         margin: 5px 10px 0 0;
@@ -60,7 +66,8 @@
       background-color: $color-secondary;
       color: $color-primary;
       text-transform: uppercase;
-      padding: 8px 10px;
+      padding: 8px 24px;
+      min-height: 50px;
       font-weight: 800;
       border-width: 0;
       font-size: 16px;

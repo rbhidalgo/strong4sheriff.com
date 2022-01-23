@@ -27,8 +27,8 @@
         margin: 0 50px;
 
         .listItem {
-            font-size: 24px;
-            font-size: clamp(14px, 2vw, 20px);
+            font-size: 18px;
+            font-size: clamp(14px, 2vw, 18px);
             cursor: pointer;
 
             a {
@@ -78,6 +78,15 @@
     &.scrolled {
         background-color: rgba(0, 0, 0, 0.85);
         padding: 25px 75px;
+
+        .lang {
+          background: #ffffff;
+          color: $color-primary;
+          &:hover {
+            color: #ffffff;
+            background: $color-primary;
+          }
+        }
 
         .logo {
             fill: #ffffff;

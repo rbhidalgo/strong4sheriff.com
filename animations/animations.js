@@ -67,7 +67,7 @@ const stagger = {
     }
 };
 
-function FadeInWhenVisible({children, delay, className}) {
+function FadeInWhenVisibleScale({children, delay, className}) {
     return (
         <motion.div
             initial="hidden"
@@ -87,6 +87,33 @@ function FadeInWhenVisible({children, delay, className}) {
             hidden: {
                 opacity: 0,
                 scale: 0
+            }
+        }}className={className}>
+            {children}
+        </motion.div>
+    );
+}
+
+function FadeInWhenVisible({children, delay, className}) {
+    return (
+        <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{
+            once: true
+        }}
+            transition={{
+            duration: 0.8,
+            delay: delay
+        }}
+            variants={{
+            visible: {
+                opacity: 1,
+                // scale: 1
+            },
+            hidden: {
+                opacity: 0,
+                // scale: 0
             }
         }}className={className}>
             {children}
@@ -147,4 +174,4 @@ function FadeInRightWhenVisible({children, delay}) {
         </motion.div>
     );
 }
-export {easing, fadeInUp, fadeInLeft, stagger, FadeInWhenVisible, FadeInLeftWhenVisible, FadeInRightWhenVisible, fadeIn};
+export {easing, fadeInUp, fadeInLeft, stagger, FadeInWhenVisible, FadeInLeftWhenVisible, FadeInRightWhenVisible, fadeIn, FadeInWhenVisibleScale};
