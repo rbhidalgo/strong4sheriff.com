@@ -15,10 +15,12 @@ const menu = [
     }, {
         title: 'Endorsements',
         path: '/endorsements'
-    }, {
-        title: 'Get Involved',
-        path: '/get-involved'
-    },{
+    }, 
+    // {
+    //     title: 'Get Involved',
+    //     path: '/get-involved'
+    // },
+    {
         title: 'Media',
         path: '/media'
     }, {
@@ -84,25 +86,25 @@ const Navbar = () => {
                         href="https://www.facebook.com/EricStrongforLACountySheriff2022"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-fb.png" width={45} height={43} alt=""/>
+                        <Image src="/img/icon-fb.png" width={35} height={33} alt=""/>
                     </a>
                     <a
                         href="https://twitter.com/Strong4Sheriff"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-twitter.png" width={45} height={43} alt=""/>
+                        <Image src="/img/icon-twitter.png" width={35} height={33} alt=""/>
                     </a>
                     <a
                         href="https://www.instagram.com/strong4sheriff/"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-ig.png" width={45} height={43} alt=""/>
+                        <Image src="/img/icon-ig.png" width={35} height={33} alt=""/>
                     </a>
                     <a
                         href="https://www.youtube.com/channel/UC5_3NIBfsWbzPGOr1M4o1Ag"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-yt.png" width={64} height={45} alt=""/>
+                        <Image src="/img/icon-yt.png" width={50} height={35} alt=""/>
                     </a>
                 </div>
                 <a

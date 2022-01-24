@@ -15,8 +15,14 @@
 
     .logo {
         cursor: pointer;
-        height: 100px;
+        height: 80px;
         transition: all 0.4s ease;
+        @include bp(ws) {
+          height: 60px;
+        }
+        @include bp(tb) {
+          height: 70px;
+        }
     }
 
     .list {
@@ -31,7 +37,7 @@
 
         .listItem {
             font-size: 18px;
-            font-size: clamp(14px, 2vw, 18px);
+            font-size: clamp(14px, 2vw, 16px);
             cursor: pointer;
 
             a {
@@ -52,6 +58,9 @@
     .social {
         display: flex;
         margin-right: 50px;
+        @include bp(dt) {
+          display: none;
+        }
 
         a {
             margin: 0 5px;
@@ -147,17 +156,13 @@
     .navContainer {
         padding: 25px;
 
-        .logo {
-            height: 75px;
-        }
-
         .list {
             margin: 0 25px;
         }
 
-        .social {
-            margin-right: 25px;
-        }
+        // .social {
+        //     margin-right: 25px;
+        // }
 
         .donate {
             margin-left: auto;
@@ -171,29 +176,21 @@
       @include bp(tb) {
         padding: 20px;
 
-        .logo {
-            height: 50px;
-        }
-
         .lang {
             margin-right: 25px;
         }
 
         .list {
-            // display: none;
-            position: fixed;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-evenly;
-            align-items: center;
-            padding: 100px 50px;
+            display: none;
+            // visibility: hidden;
+            
 
             width: 0;
             height: 100vh;
-            background-color: $color-secondary;
+            background-color: transparent;
             top: 0;
             right: 0;
-            z-index: 9999;
+            z-index: -50;
             margin: 0;
             padding: 0;
             font-weight: 800;
@@ -203,6 +200,14 @@
             transition: all 1s ease;
 
             &.open {
+              position: fixed;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            background-color: $color-secondary;
+            align-items: center;
+            padding: 100px 50px;
+              z-index: 9999;
                 opacity: 1;
                 width: 100vw;
                 transform: translateX(0%);
@@ -218,7 +223,7 @@
         }
 
         .social {
-            display: none;
+            // display: none;
             // &.open {
             //     display: flex;
             //     margin-right: 0;

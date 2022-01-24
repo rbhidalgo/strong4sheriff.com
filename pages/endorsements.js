@@ -105,6 +105,15 @@ const Endorsements = () => {
                                 <p>Community Activist Interventionist (2nd Call)</p>
                             </div>
                         </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={1.4} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__image}>
+                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                            </div>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Placeholder</h3>
+                                <p>Placeholder</p>
+                            </div>
+                        </FadeInWhenVisible>
 
                     </div>
                 </div>
