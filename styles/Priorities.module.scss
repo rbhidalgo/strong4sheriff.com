@@ -139,7 +139,7 @@
       }
       @include bp(dt) {
         display: flex;
-        flex-direction: column-reverse;
+        flex-direction: column;
       }
       @include bp(tb) {
         margin-bottom: 25px;
@@ -234,6 +234,14 @@
           top: 0;
           left: 0;
           background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, #000000 60%);
+          @include bp(dt) {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, #000000 60%);
+          }
+        }
+        .textCol {
+          @include bp(dt) {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #000000 10%, #000000 98%);
+          }
         }
       }
       &.primary {
@@ -246,6 +254,16 @@
           top: 0;
           left: 0;
           background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, rgba(240, 90, 38, .8) 60%);
+          @include bp(dt) {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 35%, rgba(240, 90, 38, .8) 50%);
+          }
+        }
+        @include bp(tb) {
+          .fullImg {
+            img {
+              object-position: 12% 50%;
+            }
+          }
         }
       }
       &.light {
@@ -257,9 +275,33 @@
           top: 0;
           left: 0;
           background: linear-gradient(270deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 20%, #f2f2f2 60%);
+          @include bp(dt) {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 25%, #f2f2f2 45%);
+          }
         }
         h2 {
           color: $color-primary;
+        }
+        .textCol {
+          @include bp(dt) {
+            background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, #f2f2f2 10%, #f2f2f2 98%);
+          }
+        }
+        &.victims {
+          @include bp(tb) {
+            .fullImg {
+              img {
+                object-position: 85% 50%;
+              }
+            }
+          }
+          &::after {
+            @include bp(dt) {
+              @include bp(dt) {
+                background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0) 45%, #f2f2f2 65%);
+              }
+            }
+          }
         }
       }
     }

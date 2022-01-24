@@ -301,7 +301,7 @@ const Priorities = () => {
                             )}
                         </AnimatePresence>
                     <motion.div
-                        className={styles.fullRow + ' ' + styles.light}
+                        className={styles.fullRow + ' ' + styles.light + ' ' + styles.victims}
                         initial="initial"
                         whileInView="animate"
                         viewport={{

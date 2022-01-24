@@ -5,7 +5,9 @@ import '../styles/globals.scss'
 
 const App = ({Component, pageProps, router}) => (
     <AnimatePresence exitBeforeEnter>
-        <div key={router.route}>
+        <div key={router.route} style={{
+            overflowX: 'hidden'
+        }}>
             <Head>
                 <title>
                     {Component.title ?? 'Page Title Goes Here'}

@@ -43,6 +43,9 @@
         flex: unset;
         width: 100%;
       }
+      @include bp(mb) {
+        margin: 0;
+      }
     }
     .wrapperButton {
       margin: 0 15px;
