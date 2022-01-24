@@ -49,7 +49,7 @@ const Priorities = () => {
                 variants={fadeInUp}>
                 <div className={styles.imgCol}>
                     <motion.img
-                        src="/img/full-feat_09.jpg"
+                        src="/img/full-feat_10.jpg"
                         alt="Picture of Los Angeles"
                         initial="initial"
                         animate="animate"
@@ -67,7 +67,8 @@ const Priorities = () => {
                             alt="Eric Strong Signature"
                             initial="initial"
                             animate="animate"
-                            variants={fadeIn}/>
+                            variants={fadeIn}
+                            className={styles.signature}/>
                     </FadeInLeftWhenVisible>
                 </div>
             </motion.section>
@@ -383,7 +384,7 @@ const Priorities = () => {
                         variants={fadeInUp}>
                         <div className={styles.fullImg + ' ' + styles.leftEric}>
                             <motion.img
-                                src="/img/full-feat_08.jpg"
+                                src="/img/full-feat_11.jpg"
                                 alt="Picture of Los Angeles"
                                 initial="initial"
                                 animate="animate"

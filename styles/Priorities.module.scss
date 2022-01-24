@@ -84,6 +84,9 @@
       font-size: clamp(20px, 3vw, 32px);
       margin-bottom: 20px;
     }
+    .signature {
+      max-width: 250px;
+    }
   }
   .imgCol {
     flex-basis: 55%;

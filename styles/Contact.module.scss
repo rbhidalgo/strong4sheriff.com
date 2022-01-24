@@ -13,6 +13,18 @@
   @include bp(tb) {
     max-height: 550px;
   }
+  @include bp(mb) {
+    align-items: flex-end;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0.25) 70%, #000000 98%);
+      }
+    }
   img {
     position: absolute;
     width: 100%;
@@ -20,20 +32,23 @@
     object-fit: cover;
     object-position: top;
     @include bp(mb) {
-      object-position: 60% 50%;
+      object-position: 90% 50%;
     }
   }
   .textContainer {
     position: relative;
     z-index: 5;
     padding: 0 75px;
-    max-width: 75%;
+    max-width: 50%;
     @include bp(dt) {
       padding: 130px 25px;
       max-width: 60%;
     }
     @include bp(tb) {
       padding: 0 20px;
+    }
+    @include bp(mb) {
+      max-width: unset;
     }
     p {
       margin-bottom: 10px;
@@ -44,6 +59,9 @@
       font-weight: 700;
       line-height: 1.2;
       margin-bottom: 50px;
+      @include bp(mb) {
+        margin-bottom: 20px;
+      }
     }
   }
 }
@@ -78,6 +96,8 @@
     align-items: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
+    width: 100%;
+    max-width: 1100px;
     @include bp(tb) {
       justify-content: center;
       flex-direction: column;
@@ -156,6 +176,9 @@
   a {
     &:nth-child(2){
       padding: 0 10px;
+    }
+    &:nth-child(3){
+      padding-right: 10px;
     }
   }
 }

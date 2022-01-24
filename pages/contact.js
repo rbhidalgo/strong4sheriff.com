@@ -12,7 +12,7 @@ const Contact = () => {
                 variants={fadeInUp}
                 className={styles.container}>
                 <motion.img
-                    src="/img/masthead_01.jpg"
+                    src="/img/masthead_06.jpg"
                     alt="Picture of Los Angeles"
                     initial="initial"
                     animate="animate"
@@ -65,27 +65,6 @@ const Contact = () => {
                         <button type="submit" className={styles.button}>Submit</button>
                     </FadeInWhenVisible>
                 </form>
-                {/* <motion.h2
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                    once: true
-                }}
-                    variants={fadeInUp}>Contact Info</motion.h2> */}
-                <div className={styles.contact_info}>
-                    <div className={styles.contact_info_left}>
-                        <p>Contact Info:</p>
-                        <p>Email: press@strong4sheriff.com
-                            <br/>
-                            Phone: (310) 908-1241
-                        </p>
-                    </div>
-                    <div className={styles.contact_info_right}>
-                        <p>Mailing Address:</p>
-                        <p>6709 La Tijera Blvd. #555<br/>
-                            Los Angeles, CA 90045</p>
-                    </div>
-                </div>
                 <div className={styles.social}>
                     <a
                         href="https://www.facebook.com/EricStrongforLACountySheriff2022"
@@ -105,7 +84,61 @@ const Contact = () => {
                         rel="noopener noreferrer">
                         <Image src="/img/icon-ig_white.png" width={45} height={43} alt=""/>
                     </a>
+                    <a
+                        href="https://www.youtube.com/channel/UC5_3NIBfsWbzPGOr1M4o1Ag"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Image src="/img/icon-yt_white.png" width={58} height={43} alt=""/>
+                    </a>
                 </div>
+                <motion.h2
+                    initial="initial"
+                    whileInView="animate"
+                    viewport={{
+                    once: true
+                }}
+                    variants={fadeInUp}>Join The Movement</motion.h2>
+                    <p>Join the team with your email address and receive the latest campaign news and updates.</p>
+
+                    <form
+                    name="GetInvolved"
+                    method="POST"
+                    data-netlify="true"
+                    data-netlify-honeypot="bot-field">
+                    <FadeInWhenVisible>
+                        <input type="email" name="email" placeholder='Email' id="" required/>
+                    </FadeInWhenVisible>
+                    <FadeInWhenVisible delay={.2}>
+                        <input type="text" placeholder="Name" name="Name" required/>
+                    </FadeInWhenVisible>
+                    <FadeInWhenVisible delay={.4}>
+                        <input type="tel" placeholder="Phone" name="Phone" required/>
+                    </FadeInWhenVisible>
+                    <FadeInWhenVisible delay={.6}>
+                    <input type="text" pattern="[0-9]{5}" title="Five digit zip code" placeholder='Zip Code' required/>
+                    </FadeInWhenVisible>
+                    <input type="hidden" name="contact" value="contact"/>
+                    <FadeInWhenVisible delay={.8}>
+                        <button type="submit" className={styles.button}>Submit</button>
+                    </FadeInWhenVisible>
+                </form>
+
+
+                <div className={styles.contact_info}>
+                    <div className={styles.contact_info_left}>
+                        <p>Contact Info:</p>
+                        <p>Email: press@strong4sheriff.com
+                            <br/>
+                            Phone: (310) 908-1241
+                        </p>
+                    </div>
+                    <div className={styles.contact_info_right}>
+                        <p>Mailing Address:</p>
+                        <p>6709 La Tijera Blvd. #555<br/>
+                            Los Angeles, CA 90045</p>
+                    </div>
+                </div>
+                
             </motion.section>
         </motion.div>
     )

@@ -4,6 +4,8 @@ import Image from "next/image";
 import {useRouter} from 'next/router';
 import {useState, useEffect} from "react"
 import Logo from "../components/Logo";
+import { useMediaQuery } from "../utils/useMediaQuery";
+import { motion, AnimatePresence } from "framer-motion";
 
 const menu = [
     {
@@ -49,6 +51,15 @@ const Navbar = () => {
         return () => window.removeEventListener("scroll", handleScroll);
     });
 
+    let isPageWide = useMediaQuery('(max-width: 768px)')
+
+    const variants = isPageWide ? {
+      open: { opacity: 1, x: 0, display: 'flex' },
+      closed: { opacity: 0, x: '100%', display: 'none' },
+    } : {
+      closed: { opacity: 1, x: 0 },
+    }
+
     return (
         <header className={`${router.pathname === '/about' || router.pathname === '/endorsements'
           ? styles.whiteNav
@@ -62,7 +73,14 @@ const Navbar = () => {
                         <Logo className={styles.logo}/>
                     </span>
                 </Link>
-                <ul
+                <AnimatePresence>
+                <motion.ul
+                    animate={open ? "open" : "closed"}
+                    variants={variants}
+                    transition={{
+                      duration: 0.6,
+                      ease: "linear"
+                  }}
                     className={`${open
                     ? styles.list + " " + styles.open
                     : styles.list}`}
@@ -77,7 +95,8 @@ const Navbar = () => {
                             </a>
                         </Link>
                     </li>)}
-                </ul>
+                </motion.ul>
+                </AnimatePresence>
                 <div
                     className={`${open
                     ? styles.social + " " + styles.open
@@ -86,25 +105,25 @@ const Navbar = () => {
                         href="https://www.facebook.com/EricStrongforLACountySheriff2022"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-fb.png" width={35} height={33} alt=""/>
+                        <Image src="/img/icon-fb.png" width={30} height={28} alt=""/>
                     </a>
                     <a
                         href="https://twitter.com/Strong4Sheriff"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-twitter.png" width={35} height={33} alt=""/>
+                        <Image src="/img/icon-twitter.png" width={30} height={28} alt=""/>
                     </a>
                     <a
                         href="https://www.instagram.com/strong4sheriff/"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-ig.png" width={35} height={33} alt=""/>
+                        <Image src="/img/icon-ig.png" width={30} height={28} alt=""/>
                     </a>
                     <a
                         href="https://www.youtube.com/channel/UC5_3NIBfsWbzPGOr1M4o1Ag"
                         target="_blank"
                         rel="noopener noreferrer">
-                        <Image src="/img/icon-yt.png" width={50} height={35} alt=""/>
+                        <Image src="/img/icon-yt.png" width={43} height={28} alt=""/>
                     </a>
                 </div>
                 <a

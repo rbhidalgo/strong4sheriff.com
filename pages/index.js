@@ -45,12 +45,15 @@ export default function Home() {
             }}
                 variants={fadeInUp}>
                 <div className={styles.imgCol}>
-                    <motion.img
-                        src="/img/feat_01.jpg"
-                        alt="Picture of Los Angeles"
+                <motion.video
                         initial="initial"
                         animate="animate"
-                        variants={fadeIn}/>
+                        variants={fadeIn}
+                        autoPlay="autoplay"
+                        loop={true} 
+                        muted>
+        <source src="/video/eric.mp4" />
+      </motion.video>
                 </div>
                 <div className={styles.textCol}>
                     <FadeInLeftWhenVisible>

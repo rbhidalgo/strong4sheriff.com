@@ -25,10 +25,10 @@ const JoinCta = () => {
           data-netlify="true"
           data-netlify-honeypot="bot-field">
           <FadeInWhenVisibleScale className={styles.wrapper}>
-              <input type="text" name="name" placeholder='Name' id=""/>
+              <input type="text" name="name" placeholder='Name' required/>
           </FadeInWhenVisibleScale>
           <FadeInWhenVisibleScale delay={.3} className={styles.wrapper}>
-              <input type="email" name="email" placeholder='Email' id=""/>
+              <input type="email" name="email" placeholder='Email' required/>
           </FadeInWhenVisibleScale>
           <input type="hidden" name="contact" value="contact"/>
           <FadeInWhenVisibleScale delay={.6} className={styles.wrapperButton}>

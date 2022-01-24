@@ -21,7 +21,7 @@ const Media = () => {
                 variants={fadeInUp}
                 className={styles.container}>
                 <motion.img
-                    src="/img/masthead_01.jpg"
+                    src="/img/masthead_05.jpg"
                     alt="Picture of Los Angeles"
                     initial="initial"
                     animate="animate"

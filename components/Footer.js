@@ -25,6 +25,12 @@ const Footer = () => {
                         rel="noopener noreferrer">
                         <Image src="/img/icon-ig.png" width={45} height={43} alt=""/>
                     </a>
+                    <a
+                        href="https://www.youtube.com/channel/UC5_3NIBfsWbzPGOr1M4o1Ag"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Image src="/img/icon-yt.png" width={58} height={43} alt=""/>
+                    </a>
                 </div>
                 <p>
                     6709 La Tijera Blvd. #555
