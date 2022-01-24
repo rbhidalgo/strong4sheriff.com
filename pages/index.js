@@ -50,9 +50,10 @@ export default function Home() {
                         animate="animate"
                         variants={fadeIn}
                         autoPlay="autoplay"
-                        loop={true} 
+                        loop={true}
+                        playsInline 
                         muted>
-        <source src="/video/eric.mp4" />
+        <source src="/video/eric-comp.mp4" type="video/mp4"/>
       </motion.video>
                 </div>
                 <div className={styles.textCol}>
