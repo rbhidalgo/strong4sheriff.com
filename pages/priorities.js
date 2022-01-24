@@ -99,7 +99,11 @@ const Priorities = () => {
                                 animate="animate"
                                 variants={fadeIn}/>
                         </div>
-                        <div className={styles.textCol + ' ' + styles.textRight}>
+                        <div 
+                        // className={styles.textCol + ' ' + styles.textRight}
+                        className={`${toggleMe && index === 0 
+                          ? styles.textCol + ' ' + styles.textRight + ' ' + styles.fullWidth
+                          : styles.textCol + ' ' + styles.textRight}`}>
                             <FadeInLeftWhenVisible>
                                 <h2>Deputy Gangs and LASD's Dated Culture</h2>
                                 <p>Eric is the only candidate that has led investigations into incidents
@@ -117,13 +121,9 @@ const Priorities = () => {
                                         ? styles.on + ' ' + styles.arrow
                                         : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
                                 </p>
-                            </FadeInLeftWhenVisible>
-                        </div>
-
-                    </motion.div>
-                        <AnimatePresence initial={false}>
+                            <AnimatePresence initial={false}>
                             {toggleMe && index === 0 && (
-                                <motion.section
+                                <motion.div
                                     className={styles.content + ' ' + styles.dark}
                                     initial="collapsed"
                                     animate="open"
@@ -131,16 +131,16 @@ const Priorities = () => {
                                     variants={{
                                     open: {
                                         opacity: 1,
-                                        height: "auto"
+                                        height: "auto",
                                     },
                                     collapsed: {
                                         opacity: 0,
-                                        height: 0
+                                        height: 0,
                                     }
                                 }}
                                     transition={{
-                                    duration: 0.3,
-                                    ease: "linear"
+                                    duration: 0.8,
+                                    ease: [0.83, 0, 0.17, 1]
                                 }}>
                                     <ul>
                                         <li>Implement policies to acknowledge and protect deputies who come forward to
@@ -154,9 +154,14 @@ const Priorities = () => {
                                             union and the county to change work rules where policies interfere with
                                             management’s ability to end deputy gangs.</li>
                                     </ul>
-                                </motion.section>
+                                </motion.div>
                             )}
                         </AnimatePresence>
+                            </FadeInLeftWhenVisible>
+                        </div>
+
+                    </motion.div>
+  
                     <motion.div
                         className={styles.fullRow + ' ' + styles.light}
                         initial="initial"
