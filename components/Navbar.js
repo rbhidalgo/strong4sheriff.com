@@ -98,6 +98,12 @@ const Navbar = () => {
                         rel="noopener noreferrer">
                         <Image src="/img/icon-ig.png" width={45} height={43} alt=""/>
                     </a>
+                    <a
+                        href="https://www.youtube.com/channel/UC5_3NIBfsWbzPGOr1M4o1Ag"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Image src="/img/icon-yt.png" width={64} height={45} alt=""/>
+                    </a>
                 </div>
                 <a
                     href="https://secure.actblue.com/donate/ericstrong-digital_website"
