@@ -186,4 +186,7 @@ const Endorsements = () => {
     )
 }
 
-export default Endorsements
+Endorsements.title = "Endorsements — Eric Strong for Los Angeles County Sheriff";
+Endorsements.description = "Endorsements — Eric Strong for Los Angeles County Sheriff";
+
+export default Endorsements;

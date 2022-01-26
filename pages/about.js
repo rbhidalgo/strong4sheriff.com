@@ -106,4 +106,7 @@ const about = () => {
     )
 }
 
+about.title = 'About Eric Strong — Eric Strong for Los Angeles County Sheriff'
+about.description = 'About Eric Strong — Eric Strong for Los Angeles County Sheriff'
+
 export default about

@@ -154,4 +154,7 @@ const Media = () => {
     )
 }
 
+Media.title = "In The News — Eric Strong for Los Angeles County Sheriff";
+Media.description = "In The News — Eric Strong for Los Angeles County Sheriff";
+
 export default Media

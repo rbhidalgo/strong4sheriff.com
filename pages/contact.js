@@ -144,4 +144,7 @@ const Contact = () => {
     )
 }
 
+Contact.title = "Contact — Eric Strong for Los Angeles County Sheriff";
+Contact.description = "Contact — Eric Strong for Los Angeles County Sheriff";
+
 export default Contact
