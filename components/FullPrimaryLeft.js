@@ -70,7 +70,6 @@ export default function FullDarkLeft(props) {
                       ? styles.on + ' ' + styles.arrow
                       : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
               </p>
-          <AnimatePresence initial={false}>
           {toggleMe && (
               <motion.div
                   className={styles.content + ' ' + styles.primary}
@@ -98,7 +97,6 @@ export default function FullDarkLeft(props) {
             }} />
               </motion.div>
           )}
-      </AnimatePresence>
           </FadeInLeftWhenVisible>
       </motion.div>
 

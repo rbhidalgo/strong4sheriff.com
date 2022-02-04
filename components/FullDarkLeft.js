@@ -1,7 +1,7 @@
 import {useState} from "react";
 import styles from '../styles/FullDarkLeft.module.scss'
 import {motion, AnimatePresence} from "framer-motion";
-import {fadeInUp, fadeIn, FadeInRightWhenVisible, FadeInLeftWhenVisible} from '../animations/animations';
+import {fadeInUp, fadeIn, FadeInLeftWhenVisible} from '../animations/animations';
 import { useMediaQuery } from "../utils/useMediaQuery";
 
 
@@ -70,7 +70,6 @@ export default function FullDarkLeft(props) {
                       ? styles.on + ' ' + styles.arrow
                       : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
               </p>
-          <AnimatePresence initial={false}>
           {toggleMe && (
               <motion.div
                   className={styles.content + ' ' + styles.dark}
@@ -98,7 +97,6 @@ export default function FullDarkLeft(props) {
             }} />
               </motion.div>
           )}
-      </AnimatePresence>
           </FadeInLeftWhenVisible>
       </motion.div>
 

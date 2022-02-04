@@ -70,7 +70,6 @@ export default function FullLightRight(props) {
                       ? styles.on + ' ' + styles.arrow
                       : styles.off + ' ' + styles.arrow}`}>&rsaquo;</span>
               </p>
-          <AnimatePresence initial={false}>
           {toggleMe && (
               <motion.div
                   className={styles.content + ' ' + styles.light}
@@ -98,7 +97,6 @@ export default function FullLightRight(props) {
             }} />
               </motion.div>
           )}
-      </AnimatePresence>
           </FadeInLeftWhenVisible>
       </motion.div>
 
