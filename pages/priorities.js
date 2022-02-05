@@ -7,7 +7,7 @@ import {motion} from "framer-motion";
 import {fadeInUp, fadeIn, FadeInLeftWhenVisible} from '../animations/animations';
 
 const Priorities = () => {
-
+    console.log("priorites page render")
     return (
         <motion.div initial="initial" animate="animate" variants={fadeIn}>
             <motion.section
@@ -75,8 +75,7 @@ const Priorities = () => {
               </ul>" readMoreContent="<ul> <li>Implement policies to acknowledge and protect deputies who come forward to report department misconduct.</li>
               <li>Enhance discipline to further deter involvement in deputy gangs.</li>
               <li>Discipline deputies who are aware of deputy gangs conduct and do nothing to report them.</li>
-              <li>Move personnel to reduce the ability for gangs to function and work with the union and the county to change work rules where policies interfere with management’s ability to end deputy gangs.</li>
-          </ul>"/>
+              <li>Move personnel to reduce the ability for gangs to function and work with the union and the county to change work rules where policies interfere with management’s ability to end deputy gangs.</li> </ul>"/>
 
           <FullLightRight 
           image="/img/full-feat_04.jpg" 

@@ -64,7 +64,7 @@ export default function FullDarkLeft(props) {
                 __html: props.content
             }} />
               
-              <p onClick={() => toggle(0)} className={styles.readMore + ' ' + styles.light}>Read More
+              <p onClick={toggle} className={styles.readMore + ' ' + styles.light}>Read More
                   <span
                       className={`${toggleMe 
                       ? styles.on + ' ' + styles.arrow

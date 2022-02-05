@@ -4,7 +4,6 @@ import Head from 'next/head'
 import '../styles/globals.scss'
 
 const App = ({Component, pageProps, router}) => (
-    <AnimatePresence exitBeforeEnter>
         <div key={router.route} style={{
             overflowX: 'hidden'
         }}>
@@ -20,7 +19,6 @@ const App = ({Component, pageProps, router}) => (
                 <Component {...pageProps}/>
             </Layout>
         </div>
-    </AnimatePresence>
 )
 
 export default App
