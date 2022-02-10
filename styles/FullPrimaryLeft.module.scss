@@ -92,7 +92,6 @@
             padding-right: 20px;
         }
         h2 {
-            text-transform: uppercase;
             font-weight: 800;
             line-height: 1.3;
             font-size: clamp(20px, 3vw, 32px);
@@ -104,9 +103,6 @@
             font-weight: 300;
             li {
                 margin-bottom: 10px;
-                ul {
-                    margin-top: 10px;
-                }
             }
         }
         &.textRight {
@@ -145,6 +141,7 @@
     ul {
         ul {
             padding-top: 20px;
+            padding-bottom: 20px;
         }
     }
 }

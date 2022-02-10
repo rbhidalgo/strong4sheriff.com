@@ -66,14 +66,8 @@ const Media = () => {
                         </div>
                         <div className={styles.textCol}>
                             <FadeInLeftWhenVisible>
-                                <p>EL.A. Sheriff’s Lt. Eric Strong, a nearly 30-year veteran of law enforcement,
-                                    announced today that he will challenge embattled Sheriff Alex Villanueva in next
-                                    year’s election. If successful, he would become the county's first Black
-                                    sheriff.</p>
-                                <p>“The leadership of this department is unwilling to even acknowledge the
-                                    existence of gangs in our ranks, and that has left the community’s trust in the
-                                    Sheriff’s Department in tatters,” Strong told a news conference outside the
-                                    sheriff’s headquarters at the Hall of Justice.</p>
+                                <p>L.A. Sheriff’s Lt. Eric Strong, a nearly 30-year veteran of law enforcement, announced today that he will challenge embattled Sheriff Alex Villanueva in next year’s election. If successful, he would become the county's first Black sheriff.</p>
+                                <p>“The leadership of this department is unwilling to even acknowledge the existence of gangs in our ranks, and that has left the community’s trust in the Sheriff’s Department in tatters,” Strong told a news conference outside the sheriff’s headquarters at the Hall of Justice.</p>
 
                             </FadeInLeftWhenVisible>
                         </div>
@@ -133,16 +127,8 @@ const Media = () => {
                         </div>
                         <div className={styles.textCol}>
                             <FadeInLeftWhenVisible>
-                                <p>Lieutenant Eric Strong announced his campaign Monday for LA County Sheriff,
-                                    and promised to investigate and end rumored “gangs” of deputies within the
-                                    department. Strong has been in law enforcement for almost 30 years, graduating
-                                    from the FBI’s National Academy at Quantico, and presently serving on the board
-                                    of Police Against Racism.</p>
-                                <p>“Leadership. That crisis of leadership has interfered with a course of calls
-                                    for a modern and more transparent LA County Sheriff’s Department. It has
-                                    undermined our honorable profession’s ability to deliver on our promise of a
-                                    more safe and a more just future for Los Angeles,” Lt. Strong said during his
-                                    speech.</p>
+                                <p>Lieutenant Eric Strong announced his campaign Monday for LA County Sheriff and promised to investigate and end rumored “gangs” of deputies within the department. Strong has been in law enforcement for almost 30 years, graduating from the FBI’s National Academy at Quantico, and presently serving on the board of Police Against Racism.</p>
+                                <p>“Leadership. That crisis of leadership has interfered with a course of calls for a modern and more transparent LA County Sheriff’s Department.  It has undermined our honorable profession’s ability to deliver on our promise of a more safe and a more just future for Los Angeles,” Lt. Strong said during his speech.</p>
 
                             </FadeInLeftWhenVisible>
                         </div>

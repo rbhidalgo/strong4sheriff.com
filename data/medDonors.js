@@ -1,8 +1,5 @@
 const medDonors = [
     {
-        name: "Malkia Cyril",
-        title: "Center for Media Justice"
-    }, {
         name: "Baz Dreisinger",
         title: "Educator and Author – Incarceration Nations"
     }, {

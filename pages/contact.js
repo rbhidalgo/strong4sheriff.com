@@ -38,8 +38,8 @@ const Contact = () => {
                     viewport={{
                     once: true
                 }}
-                    variants={fadeInUp}>Contact Us</motion.h2>
-                <p>For press or media inquiries, please email us.</p>
+                    variants={fadeInUp}>Contact Team Strong</motion.h2>
+                <p>For media inquiries, please email us at: Info@strong4sheriff.com <br/>To reach Eric’s Campaign Manager Paula Ramirez email:  Paula@strong4sheriff.com or call (323) 328-7502</p>
                 <form
                     name="contact"
                     method="POST"
@@ -73,16 +73,16 @@ const Contact = () => {
                         <Image src="/img/icon-fb_white.png" width={45} height={43} alt=""/>
                     </a>
                     <a
-                        href="https://twitter.com/Strong4Sheriff"
-                        target="_blank"
-                        rel="noopener noreferrer">
-                        <Image src="/img/icon-twitter_white.png" width={45} height={43} alt=""/>
-                    </a>
-                    <a
                         href="https://www.instagram.com/strong4sheriff/"
                         target="_blank"
                         rel="noopener noreferrer">
                         <Image src="/img/icon-ig_white.png" width={45} height={43} alt=""/>
+                    </a>
+                    <a
+                        href="https://twitter.com/Strong4Sheriff"
+                        target="_blank"
+                        rel="noopener noreferrer">
+                        <Image src="/img/icon-twitter_white.png" width={45} height={43} alt=""/>
                     </a>
                     <a
                         href="https://www.youtube.com/channel/UC5_3NIBfsWbzPGOr1M4o1Ag"
@@ -125,17 +125,11 @@ const Contact = () => {
 
 
                 <div className={styles.contact_info}>
-                    <div className={styles.contact_info_left}>
-                        <p>Contact Info:</p>
-                        <p>Email: press@strong4sheriff.com
-                            <br/>
-                            Phone: (310) 908-1241
-                        </p>
-                    </div>
-                    <div className={styles.contact_info_right}>
+                    <div className={styles.contact_info_center}>
                         <p>Mailing Address:</p>
                         <p>6709 La Tijera Blvd. #555<br/>
-                            Los Angeles, CA 90045</p>
+                            Los Angeles, CA 90045 <br/>
+                            (310) 908-1241</p>
                     </div>
                 </div>
                 
