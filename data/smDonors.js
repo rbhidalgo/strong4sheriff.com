@@ -124,7 +124,8 @@ const smDonors = [
 'Isaiah A. Galarza',
 'Frank Van Heule',
 'Roland Arceneaux – Sultan Drinks',
-'Dimario Nava'
+'Dimario Nava',
+'Stonewall Democratic Club'
 ];
 
 export default smDonors
