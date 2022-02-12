@@ -131,7 +131,7 @@ const Navbar = () => {
                     target="_blank"
                     rel="noreferrer"
                     className={styles.donate}>DONATE</a>
-                <Link
+                {/* <Link
                     href={router.pathname === "/es"
                     ? "/"
                     : '/es'}
@@ -141,7 +141,7 @@ const Navbar = () => {
                             ? "EG"
                             : 'ES'}
                     </a>
-                </Link>
+                </Link> */}
                 <div
                     className={`${open
                     ? styles.hamburger + " " + styles.open

@@ -44,7 +44,7 @@ const Endorsements = () => {
                     <div className={styles.top_donors_grid}>
                         <FadeInWhenVisible className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Kyung-Ji Kate Rhee</h3>
@@ -53,7 +53,7 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>James Costos</h3>
@@ -62,7 +62,7 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.4} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Eric Hirshberg</h3>
@@ -71,7 +71,7 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.6} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Jorge Marquez</h3>
@@ -80,7 +80,7 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.8} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Ryan Raether</h3>
@@ -89,7 +89,7 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={1} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Derek Williams</h3>
@@ -98,7 +98,7 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={1.2} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
-                                <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
                             </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Skipp Townsend</h3>

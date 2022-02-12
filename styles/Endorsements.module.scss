@@ -107,23 +107,23 @@
     &_donor {
         text-align: center;
         grid-column: span 1;
-        &__image {
-            position: relative;
-            margin-left: auto;
-            margin-right: auto;
-            height: 250px;
-            width: 250px;
-            border-radius: 9999px;
-            overflow: hidden;
-            margin-bottom: 20px;
-            @include bp(tb) {
-                height: 150px;
-                width: 150px;
-            }
-            img {
-                object-fit: cover;
-            }
-        }
+        // &__image {
+        //     position: relative;
+        //     margin-left: auto;
+        //     margin-right: auto;
+        //     height: 250px;
+        //     width: 250px;
+        //     border-radius: 9999px;
+        //     overflow: hidden;
+        //     margin-bottom: 20px;
+        //     @include bp(tb) {
+        //         height: 150px;
+        //         width: 150px;
+        //     }
+        //     img {
+        //         object-fit: cover;
+        //     }
+        // }
         &__text {
             h3 {
                 color: $color-primary;
