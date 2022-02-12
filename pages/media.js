@@ -46,6 +46,33 @@ const Media = () => {
             }}
                 variants={fadeInUp}>
                 <div className={styles.cards}>
+                <motion.div
+                        className={styles.twoCol}
+                        initial="initial"
+                        whileInView="animate"
+                        viewport={{
+                        once: true
+                    }}
+                        variants={fadeInUp}>
+                        <div className={styles.textCol}>
+                            <p className={styles.small}>2/7/2022</p>
+                            <h2>Eric Strong Supports Charter Amendment Calling For Stronger Oversight Of Sheriff</h2>
+                            <a
+                                className={styles.button}
+                                href='https://laist.com/news/criminal-justice/aclu-activists-want-county-supervisors-to-have-power-to-remove-sheriffs'
+                                target="_blank"
+                                rel="noreferrer">
+                                READ MORE</a>
+                        </div>
+                        <div className={styles.textCol}>
+                            <FadeInLeftWhenVisible>
+                                <p>Unlike the incumbent, I believe that no sheriff should oppose or resist accountability and oversight. This is especially true if we’re doing our job. As I always say, if we are doing what we are supposed to, when we’re supposed to, how we’re supposed to, then it doesn't matter who is watching.</p>
+                                <p>As Sheriff, I would have no concerns about these amendments being in place but I do understand why the current sheriff would.</p>
+
+                            </FadeInLeftWhenVisible>
+                        </div>
+                    </motion.div>
+
                     <motion.div
                         className={styles.twoCol}
                         initial="initial"
