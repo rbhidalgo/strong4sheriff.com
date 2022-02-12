@@ -90,8 +90,8 @@
     z-index: 1;
     margin-left: -75px;
     @include bp(dt) {
-      padding: 0 25px 50px 25px;
-      margin-top: -50px;
+      padding: 25px 25px 50px 25px;
+      margin-top: 0;
       margin-left: 0;
     }
     @include bp(tb) {

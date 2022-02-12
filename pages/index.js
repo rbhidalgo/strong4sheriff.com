@@ -64,7 +64,7 @@ export default function Home() {
                         <p>While his professional experience sets him apart, Eric’s personal experience as a victim of crime, someone who has had negative interactions with police, and who has family members who have been incarcerated and even killed by law enforcement, is what enables him to lead LA County at this critical time.</p>
                         <Link href="/about">
                             <a className={styles.button}>
-                            Click here to learn more about Eric</a>
+                            Learn more about Eric</a>
                         </Link>
                     </FadeInLeftWhenVisible>
                 </div>
