@@ -42,15 +42,7 @@ const Endorsements = () => {
                 variants={fadeInUp}>
                 <div className={styles.container}>
                     <div className={styles.top_donors_grid}>
-                        <FadeInWhenVisible className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>Kyung-Ji Kate Rhee</h3>
-                                <p>Center for Nu Leadership on Urban Solutions</p>
-                            </div>
-                        </FadeInWhenVisible>
+
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__image}>
                                 {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}

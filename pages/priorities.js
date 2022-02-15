@@ -72,8 +72,8 @@ const Priorities = () => {
               </ul>" readMoreContent="<ul> 
               <li>Implement policies to acknowledge and protect deputies who come forward to report department misconduct.</li>
               <li>Enhance discipline to further deter involvement in deputy gangs.</li>
-              <li>Discipline deputies who are aware of deputy gangs' conduct and do nothing to report them.</li>
-              <li>Move personnel to reduce the ability for gangs to function and work with the union and the county to change work rules where policies interfere with management’s ability to end deputy gangs.</li> </ul>"/>
+              <li>Discipline deputies who are aware of misconduct and do nothing to report it.</li>
+              <li>For the thousands of good women and men doing the job right, I will make it safe, easy, accepted and respected to do the right thing and speaks up against misconduct.  I will work with the union and the county to change work rules where policies interfere with management’s ability to end deputy gangs.</li> </ul>"/>
 
           <FullLightRight 
           image="/img/full-feat_04.jpg" 
@@ -81,7 +81,7 @@ const Priorities = () => {
           <p><em>With family members that have been incarcerated, Eric understands how important it is that we right-size the footprint of a sprawling criminal justice system that often exacerbates recidivism, insecurity, and homelessness.</em></p>
           <p><strong>AS SHERIFF, ERIC WILL:</strong></p>    
           <ul>
-          <li>Be the first elected Sheriff in history to support not building a new Men’s Central Jail as  approximately 1/3rd of the in-custody population has behavioral and mental health challenges. By treating this population, we can better address the behavioral health crisis on our streets, its connection to homelessness and recidivism, and we can avoid building a costly new jail.</li>
+          <li>Be the first elected Sheriff in history to not support building a new Men’s Central Jail as  approximately 1/3rd of the in-custody population has behavioral and mental health challenges. By treating this population, we can better address the behavioral health crisis on our streets, its connection to homelessness and recidivism, and we can avoid building a costly new jail.</li>
           </ul>" readMoreContent=" <ul>
           <li>Work with and support the County’s Alternatives to Incarceration Initiative to keep people out of the criminal justice system.</li>
           <li>Work to break the cycle of addiction, petty crime, and homelessness by working with the ATI Initiative to divert people into services immediately at the point of contact.</li>
@@ -98,7 +98,7 @@ const Priorities = () => {
               <li>Attend the Citizens Advisory Committee listening sessions to ensure families and survivors of violent crimes and police violence are heard.</li>
               <li>Personally contact the family of any individual killed by an on-duty member of the LASD, irrespective of the lawfulness of the use of force.</li>
               <li>Extend mental health training to line deputies to ensure those first on-scene do not need to wait for a sergeant with training in working with the mentally ill and less-lethal alternatives.</li>
-              <li>Create a co-responder model to ensure mental health professionals respond with Sheriff's Deputies to mental health calls.</li>
+              <li>Support a co-responder model to ensure mental health professionals respond with Sheriff's Deputies to mental health calls.</li>
           </ul>"/>
 
 <FullLightRight 
@@ -107,14 +107,14 @@ const Priorities = () => {
           <p><em>When someone is is victimized they are in a most vulnerable moment. It is necessary they are treated with great care and compassion and are made to feel safe.</em></p>
           <p><strong>AS SHERIFF, ERIC WILL:</strong></p>
           <ul>
-              <li>Put the needs of Victims first. Make sure they are protected from perpetrators and revictimization. Ensure victims are able to participate in the justice system process, that they receive verbal and written information about the justice system, services, and available assistance to enable participation in the process for themselves, their loved ones, and representatives of murdered family members.</li>
+              <li>Put the needs of victims first and take steps to protect them from their perpetrators and re-victimization. Ensure victims are able to freely participate in the justice system process, and that they receive verbal and written information about services and available assistance, which will guide them through a difficult journey.</li>
           </ul>" 
           readMoreContent="<ul>
-          <li>Ensure victims are not re-victimized by a lack of compassion or discounted by any department member who makes contact. All victims need to be treated with common courtesy just as we would want our loved ones to be treated.</li>
-          <li>Commit to standing with victims and making sure my Department provides them with all necessary resources to make them whole.</li>
+          <li>Ensure victims are not re-victimized by a lack of compassion or discounted by any department member who makes contact. All victims need to be treated with respect, dignity and empathy, just as we would want our loved ones to be treated.</li>
+          <li>Commit to standing with victims and making sure my department provides them with information about available resources to make them whole.</li>
           <li>Partner with communities and other law enforcement agencies to find solutions to neighborhood-specific problems including vandalism and shoplifting. Advocate for and work closely with violence reduction efforts such as the use of gang intervention workers.</li>
           <li>Use modern crime-fighting tactics that focus on the most prolific offenders. That, in turn, will have an outsized impact on overall crime in our communities.</li>
-          <li>Require Deputies to undergo cultural competency training to ensure they are respectful to all victims of crime, and ensuring as part of regular training Deputies undergo vulnerable victim training to ensure victims of elder abuse, fraud, sex assault, and domestic violence are treated with the utmost respect and dignity.</li>
+          <li>Require deputies to undergo cultural competency training to ensure they are respectful to all victims of crime. Additionally, I will ensure that, as part of regular training, deputies undergo vulnerable victim training to ensure victims of elder abuse, fraud, sexual assault, and domestic violence are treated with the utmost respect and dignity.</li>
           <li>Make sure deputies inform undocumented survivors, particularly victims of domestic violence, that they will never be reported to ICE when they make a report to Sheriff’s Deputies or testify against an abuser.</li>
       
       </ul>"/>
@@ -122,7 +122,7 @@ const Priorities = () => {
 
 <FullPrimaryLeft image="/img/full-feat_11.jpg" 
               content="<h2>Trust and Transparency</h2>
-              <p><em>Respect is earned, it is not demanded. We must prove that the Los Angeles County Sheriff's Department deserves the community's trust by earning it, not demanding it. By ensuring full transparency, the LASD can regain its stature as a respected agency so that we can better serve the needs of our community.</em></p>
+              <p><em>Respect is earned, it is not demanded. We must prove that the Los Angeles County Sheriff's Department deserves the community's trust by earning it. By ensuring full transparency, the LASD can regain its stature as a respected agency so that we can better serve the needs of our community.</em></p>
               <p><strong>AS SHERIFF, ERIC WILL:</strong></p>
                   
               <ul>
@@ -135,7 +135,7 @@ const Priorities = () => {
 
               <li>Make the LASD policies and procedures public.</li>
 
-              <li>Enact a policy that ensures there are no retaliatory arrests for individuals or their family members who speak against the Department, and I will implement a modern approach to crowd control and other First Amendment activity.</li>
+              <li>Enact a policy that ensures there are no retaliatory arrests for individuals or their family members who speak against the Department. Implement a modern approach to crowd control and other First Amendment activity.</li>
 
               <li>Foster relationships with the community and key stakeholders and ensure they have a seat at the table. That will include:
                   <ul>

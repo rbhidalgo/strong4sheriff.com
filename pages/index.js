@@ -60,8 +60,8 @@ export default function Home() {
                     <FadeInLeftWhenVisible>
                         <h2>Meet Eric Strong</h2>
 
-                        <p>Over his nearly 30-year career in public safety, Eric Strong has led units across virtually every function of law enforcement, from patrol to courts, custody, investigations, Internal Affairs, risk management, and auditing. He has also commanded a patrol station the Advocacy Bureau and the Audit and Accountability Bureau.</p>
-                        <p>While his professional experience sets him apart, Eric’s personal experience as a victim of crime, someone who has had negative interactions with police, and who has family members who have been incarcerated and even killed by law enforcement, is what enables him to lead LA County at this critical time.</p>
+                        <p>Over his nearly 30-year career in public safety, Eric Strong has led units across virtually every function of law enforcement, including patrol, courts, custody, training, youth programs, investigations, Internal Affairs, risk management, and auditing. He has also commanded a patrol station the Advocacy Bureau and the Audit and Accountability Bureau.</p>
+                        <p>While his professional experience sets him apart, Eric’s personal experience is what gives him a 360-degree perspective of the needs of community and law enforcement, and enables him to lead LA County at this critical time.</p>
                         <Link href="/about">
                             <a className={styles.button}>
                             Learn more about Eric</a>
@@ -78,7 +78,7 @@ export default function Home() {
                 once: true
             }}
                 variants={fadeInUp}>
-                <p className={styles.quote}>“As L.A. County Sheriff, my mission will be to enhance your safety, protect victims of crime, and rid the Department of a culture that has allowed deputy gangs to fester. Together, we can and will make this a world-class department that will enhance safety and justice, and make Los Angeles County proud.” <br/>
+                <p className={styles.quote}>“As L.A. County Sheriff, my mission will be to enhance your safety, protect victims of crime, and rid the Department of a culture that has allowed deputy gangs to fester. Together, we can and will make this a world-class department that will enhance safety and justice, have accountability to the people, be transparent, and make Los Angeles County proud.” <br/>
                     <motion.img
                         src="/img/light-signature.png"
                         alt="Eric Strong Signature"

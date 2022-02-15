@@ -56,7 +56,7 @@ const about = () => {
                     <FadeInLeftWhenVisible>
                         <h2>Experienced Peace Officer Committed to Helping Others</h2>
                         <p>While his professional experience sets him apart, Eric’s personal experience as a victim of crime, someone who has had negative interactions with police, and who has family members who have been incarcerated and killed by law enforcement, is what will enable him to lead for LA County at this critical time.</p>
-                        <p>Born and raised in L.A. County, Eric is a proud son, husband, father, brother, nephew, and youth counselor. After attending St. John Bosco High School, Eric attended to the University of California at Los Angeles.  He also served in the United States Marine Corps. He served in the United States Marine Corps and began his career in public safety in 1993, following in his father’s footsteps as an officer for the Compton Police Department.</p>
+                        <p>Born and raised in L.A. County, Eric is a proud son, husband, father, brother, nephew, and youth counselor. After attending St. John Bosco High School, Eric attended to the University of California at Los Angeles.  He also served in the United States Marine Corps. Eric began his career in public safety in 1993, following in his father’s footsteps as an officer for the Compton Police Department. </p>
                     </FadeInLeftWhenVisible>
                 </div>
             </motion.section>
@@ -72,9 +72,9 @@ const about = () => {
                     <FadeInRightWhenVisible>
                         <h2>A community leader, born and raised in Los Angeles County</h2>
                         <p>Eric is a founding board member of Police Against Racism which strives to dismantle systemic racism in policing. He is a graduate of the FBI National Academy at Quantico and has received awards for his handling of some of the department’s most infamous internal affairs investigations, including the Quiet Cannon Case involving a Deputy Gang known as the 3000 Boys.</p>
-                        <p>Eric lives in Inglewood with his wife Sidra who also serves in the LA County Sheriff’s Department. They have three children ages 24, 22, and 21.</p>
                         <p>Eric has been a community leader and mentor. He has contributed to improving his communities as he worked with youth for over a decade coaching baseball, soccer, football, and basketball. Eric has worked with youth programs writing grants, providing leadership, and creating character development curriculums. He regularly volunteers for numerous programs such as the United Peace Officers Against Crime Summer camps, 999 for Kids, and food giveaways.</p>
                         <p>Eric holds a Bachelor of Science in Management; is a graduate of the FBI National Academy, LA County University Management Development Program, and Blue Courage Leadership combined with thousands of hours of training and education in police practices.</p>
+                        <p>Eric lives in Inglewood with his wife Sidra who also serves in the LA County Sheriff’s Department, and they have three children ages 24, 22, and 21.</p>
                     </FadeInRightWhenVisible>
                 </div>
                 <div className={styles.fullImg}>
