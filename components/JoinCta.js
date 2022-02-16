@@ -19,7 +19,9 @@ const JoinCta = () => {
           once: true
       }}
           variants={fadeInUp}>Join The Movement</motion.h2>
-      <form
+          <p>Sign up to get news updates from Eric Strong and his campaign for Los Angeles County Sheriff.  Get involved today!</p>
+          <a href="http://eepurl.com/hUV5c9" target="_blank" rel="noreferrer" className={styles.button}>Join Now</a>
+      {/* <form
           name="join-team-strong"
           method="POST"
           data-netlify="true"
@@ -34,7 +36,7 @@ const JoinCta = () => {
           <FadeInWhenVisibleScale delay={.6} className={styles.wrapperButton}>
               <button type="submit">Send</button>
           </FadeInWhenVisibleScale>
-      </form>
+      </form> */}
   </motion.section>
     )
 }

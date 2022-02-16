@@ -11,9 +11,9 @@
   color: #ffffff;
   position: relative;
   z-index: 1;
+  flex-direction: column;
   @include bp(tb) {
     padding: 25px 50px;
-    flex-direction: column;
     justify-content: center;
   }
   h2 {
@@ -79,6 +79,20 @@
         margin: 15px 0 0 0;
         // flex-basis: 33.333%;
       }
+    }
+  }
+  .button {
+    text-decoration: none;
+    padding: 8px 24px;
+    background: $color-secondary;
+    text-transform: uppercase;
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 800;
+    transition: all 0.4s ease;
+    &:hover {
+      background: #000000;
+        color: $color-primary;
     }
   }
 }
