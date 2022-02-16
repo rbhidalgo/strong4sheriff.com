@@ -94,5 +94,8 @@
       background: #000000;
         color: $color-primary;
     }
+    @include bp(tb) {
+      font-size: 18px;
+    }
   }
 }
