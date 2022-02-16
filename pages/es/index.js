@@ -54,7 +54,7 @@ export default function Home() {
                     </FadeInLeftWhenVisible>
                     <input type="hidden" name="contact" value="contact"/>
                     <FadeInLeftWhenVisible delay={.6}>
-                        <button>submit</button>
+                        <button type="submit">Send</button>
                     </FadeInLeftWhenVisible>
                 </form>
             </motion.section>

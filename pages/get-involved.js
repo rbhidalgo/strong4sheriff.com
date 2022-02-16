@@ -64,7 +64,7 @@ const GetInvolved = () => {
             </FadeInWhenVisible>
             <input type="hidden" name="contact" value="contact"/>
             <FadeInWhenVisible delay={1.2}>
-                <button>submit</button>
+                <button type="submit">Send</button>
             </FadeInWhenVisible>
         </form>
     </motion.section>

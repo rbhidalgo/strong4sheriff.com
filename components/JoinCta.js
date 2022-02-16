@@ -32,7 +32,7 @@ const JoinCta = () => {
           </FadeInWhenVisibleScale>
           <input type="hidden" name="contact" value="contact"/>
           <FadeInWhenVisibleScale delay={.6} className={styles.wrapperButton}>
-              <button>submit</button>
+              <button type="submit">Send</button>
           </FadeInWhenVisibleScale>
       </form>
   </motion.section>
