@@ -52,7 +52,7 @@ export default function Home() {
                     <FadeInLeftWhenVisible delay={.3}>
                         <input type="email" name="email" placeholder='Email' id=""/>
                     </FadeInLeftWhenVisible>
-                    <input type="hidden" name="contact" value="contact"/>
+                    <input type="hidden" name="join-team" value="contact"/>
                     <FadeInLeftWhenVisible delay={.6}>
                         <button type="submit">Send</button>
                     </FadeInLeftWhenVisible>

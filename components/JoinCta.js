@@ -20,7 +20,7 @@ const JoinCta = () => {
       }}
           variants={fadeInUp}>Join The Movement</motion.h2>
       <form
-          name="join-team"
+          name="join-team-strong"
           method="POST"
           data-netlify="true"
           data-netlify-honeypot="bot-field">
@@ -30,7 +30,7 @@ const JoinCta = () => {
           <FadeInWhenVisibleScale delay={.3} className={styles.wrapper}>
               <input type="email" name="email" placeholder='Email' required/>
           </FadeInWhenVisibleScale>
-          <input type="hidden" name="contact" value="contact"/>
+          <input type="hidden" name="form-name" value="join-team-strong"/>
           <FadeInWhenVisibleScale delay={.6} className={styles.wrapperButton}>
               <button type="submit">Send</button>
           </FadeInWhenVisibleScale>

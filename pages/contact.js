@@ -41,7 +41,7 @@ const Contact = () => {
                     variants={fadeInUp}>Contact Team Strong</motion.h2>
                 <p>For media inquiries, please email us at: Info@strong4sheriff.com <br/>To reach Eric’s Campaign Manager Paula Ramirez email:  Paula@strong4sheriff.com or call (323) 328-7502</p>
                 <form
-                    name="contact"
+                    name="contact-us"
                     method="POST"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field">
@@ -52,7 +52,7 @@ const Contact = () => {
                         <input type="text" placeholder="Last Name" name="Last Name" required/>
                     </FadeInWhenVisible>
                     <FadeInWhenVisible delay={.4}>
-                        <input type="email" name="email" placeholder='Email' id="" required/>
+                        <input type="email" name="email" placeholder='Email' required/>
                     </FadeInWhenVisible>
                     <FadeInWhenVisible delay={.6}>
                         <input type="tel" placeholder="Phone" name="Phone"/>
@@ -60,7 +60,7 @@ const Contact = () => {
                     <FadeInWhenVisible className={styles.text_area} delay={.8}>
                         <textarea name="Message" rows="10" placeholder="Message" required/>
                     </FadeInWhenVisible>
-                    <input type="hidden" name="contact" value="contact"/>
+                    <input type="hidden" name="form-name" value="contact-us"/>
                     <FadeInWhenVisible delay={1}>
                         <button type="submit" className={styles.button}>Submit</button>
                     </FadeInWhenVisible>
@@ -101,12 +101,12 @@ const Contact = () => {
                     <p>Join the team with your email address and receive the latest campaign news and updates.</p>
 
                     <form
-                    name="GetInvolved"
+                    name="get-involved"
                     method="POST"
                     data-netlify="true"
                     data-netlify-honeypot="bot-field">
                     <FadeInWhenVisible>
-                        <input type="email" name="email" placeholder='Email' id="" required/>
+                        <input type="email" name="email" placeholder='Email' required/>
                     </FadeInWhenVisible>
                     <FadeInWhenVisible delay={.2}>
                         <input type="text" placeholder="Name" name="Name" required/>
@@ -117,7 +117,7 @@ const Contact = () => {
                     <FadeInWhenVisible delay={.6}>
                     <input type="text" pattern="[0-9]{5}" title="Five digit zip code" placeholder='Zip Code' required/>
                     </FadeInWhenVisible>
-                    <input type="hidden" name="contact" value="contact"/>
+                    <input type="hidden" name="form-name" value="get-involved"/>
                     <FadeInWhenVisible delay={.8}>
                         <button type="submit" className={styles.button}>Submit</button>
                     </FadeInWhenVisible>
