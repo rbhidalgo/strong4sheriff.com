@@ -3,6 +3,9 @@ const medDonors = [
         name: "Ron Baldwin",
         title: "Political Engager"
     }, {
+        name: "Ron Baldwin",
+        title: "Political Engager"
+    }, {
         name: "Dr Ed Armstrong",
         title: "Psychology"
     }, {
@@ -19,7 +22,7 @@ const medDonors = [
         title: "Singer “Next”"
     }, {
         name: "Magnus Hollo",
-        title: "Producer”"
+        title: "Producer"
     }, {
         name: "Eva Jackson",
         title: "Radio TV personality - Candace “Candy” Jordan"
@@ -37,19 +40,25 @@ const medDonors = [
         title: "Author/Producer"
     }, {
         name: "Phil Allen",
-        title: "Pastor Author"
-    }, {
-        name: "Phil Allen",
         title: "Pastor Author - Open Wounds"
     }, {
         name: "Dan Passage",
-        title: "Attorney"
+        title: "Attorney  "
     }, {
         name: "Dana Lawson",
         title: "Attorney"
     }, {
         name: "Daryle Dupree",
         title: "Director Southern California Edison"
+    }, {
+        name: "Janna Payne Moseley",
+        title: "Influencer"
+    }, {
+        name: "Chris Parr",
+        title: "Influencer"
+    }, {
+        name: "Karl Rashad",
+        title: "Influencer"
     }, {
         name: "Jim Boyd",
         title: "Marine Corps League Sgt at Arms (GySgt/USMC ret.)"
@@ -140,8 +149,13 @@ const medDonors = [
     }, {
         name: "LaVonce Jeffries",
         title: "Law Enforcement"
-    },
-    {
+    }, {
+        name: "Lendell Johnson",
+        title: "Law Enforcement"
+    }, {
+        name: "Tina Fleming",
+        title: "Law Enforcement"
+    }, {
         name: "Bruce McCall",
         title: "Pastor (Law Enforcement, ret.)"
     }, {
@@ -151,19 +165,7 @@ const medDonors = [
         name: "Gregory Sanders",
         title: "CLERGY"
     }, {
-        name: "Charles Harris",
-        title: "CLERGY"
-    }, {
-        name: "Janna Payne Moseley",
-        title: "CLERGY"
-    }, {
-        name: "Chris Parr",
-        title: "CLERGY"
-    }, {
-        name: "Andrea Slater",
-        title: "CLERGY"
-    }, {
-        name: "Karl Rashad",
+        name: "Charles Harris ",
         title: "CLERGY"
     }
 ];
