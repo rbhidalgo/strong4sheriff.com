@@ -1,23 +1,5 @@
 const medDonors = [
     {
-        name: "Cory Greene",
-        title: "Co-Founder H.O.L.L.A."
-    }, {
-        name: "Deborah Small",
-        title: "Attorney Founder Break the Chains"
-    }, {
-        name: "Van Jones",
-        title: "Founder #Cut50 & Founder & Pres, Dream Corps"
-    }, {
-        name: "Nicholas Turner",
-        title: "Pres Institute of Justice"
-    }, {
-        name: "Rashad Robinson",
-        title: "Color of Change"
-    }, {
-        name: "Gina Clayton",
-        title: "Attorney & Founder Essie Justice Group"
-    }, {
         name: "Ron Baldwin",
         title: "Political Engager"
     }, {
