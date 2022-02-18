@@ -37,6 +37,35 @@ export default function Home() {
             </motion.section>
             <JoinCta/>
             <motion.section
+                className={styles.video}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                once: true
+            }}
+                variants={fadeInUp}>
+                  <div className={styles.mw800}>
+                    <div className={styles.videoContainer}>
+                        <iframe
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/J2lM-pX9kD0"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                    </div>
+                </div>
+                <p className={styles.quote}>“As L.A. County Sheriff, my mission will be to enhance your safety, protect victims of crime, and rid the Department of a culture that has allowed deputy gangs to fester. Together, we can and will make this a world-class department that will enhance safety and justice, have accountability to the people, be transparent, and make Los Angeles County proud.” <br/>
+                    <motion.img
+                        src="/img/light-signature.png"
+                        alt="Eric Strong Signature"
+                        initial="initial"
+                        animate="animate"
+                        variants={fadeIn}/> {/* <span className={styles.small}>— Eric Strong</span> */}
+                </p>
+            </motion.section>
+            <motion.section
                 className={styles.twoCol}
                 initial="initial"
                 whileInView="animate"
@@ -69,36 +98,7 @@ export default function Home() {
                     </FadeInLeftWhenVisible>
                 </div>
             </motion.section>
-
-            <motion.section
-                className={styles.video}
-                initial="initial"
-                whileInView="animate"
-                viewport={{
-                once: true
-            }}
-                variants={fadeInUp}>
-                <p className={styles.quote}>“As L.A. County Sheriff, my mission will be to enhance your safety, protect victims of crime, and rid the Department of a culture that has allowed deputy gangs to fester. Together, we can and will make this a world-class department that will enhance safety and justice, have accountability to the people, be transparent, and make Los Angeles County proud.” <br/>
-                    <motion.img
-                        src="/img/light-signature.png"
-                        alt="Eric Strong Signature"
-                        initial="initial"
-                        animate="animate"
-                        variants={fadeIn}/> {/* <span className={styles.small}>— Eric Strong</span> */}
-                </p>
-                <div className={styles.mw800}>
-                    <div className={styles.videoContainer}>
-                        <iframe
-                            width="100%"
-                            height="315"
-                            src="https://www.youtube.com/embed/J2lM-pX9kD0"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
-                    </div>
-                </div>
-            </motion.section>
+            
         </motion.div>
     )
 }
