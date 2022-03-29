@@ -28,6 +28,12 @@ const menu = [
     }, {
         title: 'Contact',
         path: '/contact'
+    }, {
+        title: 'Host An Event',
+        path: 'https://forms.gle/yhhaBY9u5HSXsxfr5'
+    }, {
+        title: 'VOLUNTEER',
+        path: 'https://forms.gle/bBXETG1gauM4YiLR6'
     }
 ]
 

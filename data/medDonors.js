@@ -167,6 +167,18 @@ const medDonors = [
     }, {
         name: "Charles Harris ",
         title: "CLERGY"
+    }, {
+        name: "Stonewall Democratic Club",
+    },
+    {
+        name: "Culver City Democratic Club"
+    }, {
+        name: "Progressive Democratic Club"
+    }, {
+        name: "ILWU Local 13"
+    }, {
+        name: "Joe Gatlin",
+        title: "San Pedro NAACP Vice-President"
     }
 ];
 

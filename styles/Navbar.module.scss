@@ -2,7 +2,7 @@
 @import "variables";
 
 .navContainer {
-    padding: 50px 75px;
+    padding: 50px 25px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,11 +30,12 @@
         text-transform: uppercase;
         list-style: none;
         display: flex;
+        flex-wrap: wrap;
         justify-content: space-around;
         width: 80%;
-        margin: 0 50px;
+        gap: 25px;
         @include bp(ws) {
-          margin: 0 25px;
+          margin: 0 12.5px;
         }
 
         .listItem {
@@ -59,7 +60,7 @@
 
     .social {
         display: flex;
-        margin-right: 50px;
+        margin-right: 25px;
         @include bp(dt) {
           display: none;
         }
@@ -94,7 +95,7 @@
 
     &.scrolled {
         background-color: rgba(0, 0, 0, 0.85);
-        padding: 25px 75px;
+        padding: 25px 25px;
 
         .lang {
             background: #ffffff;
@@ -159,10 +160,10 @@
 }
 @include bp(dt) {
     .navContainer {
-        padding: 25px;
+        padding: 20px;
 
         .list {
-            margin: 0 25px;
+            margin: 0 12.5px;
         }
 
         // .social {
