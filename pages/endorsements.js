@@ -2,6 +2,7 @@ import JoinCta from '../components/JoinCta'
 import styles from '../styles/Endorsements.module.scss'
 import medDonors from '../data/medDonors'
 import smDonors from '../data/smDonors'
+import organizations from '../data/organizations'
 import {motion} from "framer-motion";
 import {fadeInUp, fadeIn, FadeInRightWhenVisible, FadeInLeftWhenVisible, FadeInWhenVisible} from '../animations/animations';
 import Image from 'next/image'
@@ -41,6 +42,8 @@ const Endorsements = () => {
             }}
                 variants={fadeInUp}>
                 <div className={styles.container}>
+                <h3>Eric has a very diverse mixture of people and professions that support him. Below are just a few of the wonderful people:</h3>
+                <h2 className={styles.title}><strong>Elected & Community Leaders</strong></h2>
                     <div className={styles.top_donors_grid}>
 
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
@@ -97,6 +100,15 @@ const Endorsements = () => {
                                 <p>Community Activist Interventionist (2nd Call)</p>
                             </div>
                         </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={1.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__image}>
+                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
+                            </div>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Mike Bonin</h3>
+                                <p>Los Angeles City Councilmember</p>
+                            </div>
+                        </FadeInWhenVisible>
 
                     </div>
                 </div>
@@ -131,11 +143,19 @@ const Endorsements = () => {
             }}
                 variants={fadeInUp}>
                 <div className={styles.container}>
-                    <h2>
+                    {/* <h2>
                         <strong>Eric has a very diverse mixture of people and professions that support him. Below are just a few of the wonderful people:</strong>
-                    </h2>
+                    </h2> */}
+                    <h2>Labor</h2>
                     <div className={styles.med_donors_grid}>
                         {medDonors.map((item, index) => <div className={styles.med_donor} key={index}>
+                            <h3>{item.name}</h3>
+                            <p>{item.title}</p>
+                        </div>)}
+                    </div>
+                        <h2><strong>Organizations</strong></h2>
+                        <div className={styles.med_donors_grid}>
+                        {organizations.map((item, index) => <div className={styles.med_donor} key={index}>
                             <h3>{item.name}</h3>
                             <p>{item.title}</p>
                         </div>)}
