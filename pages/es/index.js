@@ -1,6 +1,14 @@
-import styles from '../../styles/Home.module.scss'
+import JoinCta from '../components/JoinCta'
+import styles from '../styles/Home.module.scss'
 import {motion} from 'framer-motion';
-import {fadeInUp, fadeIn, stagger, FadeInWhenVisible, FadeInLeftWhenVisible} from '../../animations/animations';
+import {
+    fadeInUp,
+    fadeIn,
+    stagger,
+    FadeInWhenVisible,
+    FadeInLeftWhenVisible,
+    FadeInRightWhenVisible
+} from '../animations/animations';
 import Link from "next/link";
 
 export default function Home() {
@@ -17,48 +25,46 @@ export default function Home() {
                     initial="initial"
                     animate="animate"
                     variants={fadeIn}/>
-                <motion.div
-                    initial="initial"
-                    animate="animate"
-                    variants={fadeInUp}
-                    className={styles.textContainer}>
-                    <h1>Vote por Eric Strong por un condado de Los Ángeles más seguro y más justo para todas las personas.</h1>
-                    <Link href="/about">
-                        <a className={styles.buttonInvert}>
-                        Conoce a Eric</a>
-                    </Link>
-                </motion.div>
+                <FadeInRightWhenVisible>
+                    <div className={styles.textContainer}>
+                        <h1>Vote a Eric Strong por un condado de Los Ángeles más seguro y más justo para todas las personas.</h1>
+                        <Link href="/about">
+                            <a className={styles.buttonInvert}>
+                                Meet Eric</a>
+                        </Link>
+                    </div>
+                </FadeInRightWhenVisible>
             </motion.section>
+            <JoinCta/>
             <motion.section
+                className={styles.video}
                 initial="initial"
-                animate="animate"
-                variants={fadeInUp}
-                className={styles.cta}>
-                <motion.h2
-                    initial="initial"
-                    whileInView="animate"
-                    viewport={{
-                    once: true
-                }}
-                    variants={fadeInUp}>Join The Movement</motion.h2>
-                <form
-                    name="join-team"
-                    method="POST"
-                    data-netlify="true"
-                    data-netlify-honeypot="bot-field">
-                    <FadeInLeftWhenVisible>
-                        <input type="text" name="name" placeholder='Name' id=""/>
-                    </FadeInLeftWhenVisible>
-                    <FadeInLeftWhenVisible delay={.3}>
-                        <input type="email" name="email" placeholder='Email' id=""/>
-                    </FadeInLeftWhenVisible>
-                    <input type="hidden" name="join-team" value="contact"/>
-                    <FadeInLeftWhenVisible delay={.6}>
-                        <button type="submit">Send</button>
-                    </FadeInLeftWhenVisible>
-                </form>
+                whileInView="animate"
+                viewport={{
+                once: true
+            }}
+                variants={fadeInUp}>
+                  <div className={styles.mw800}>
+                    <div className={styles.videoContainer}>
+                        <iframe
+                            width="100%"
+                            height="315"
+                            src="https://www.youtube.com/embed/J2lM-pX9kD0"
+                            title="YouTube video player"
+                            frameBorder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen></iframe>
+                    </div>
+                </div>
+                <p className={styles.quote}>“Como alguacil del condado de Los Ángeles, mi misión será mejorar su seguridad, proteger a las víctimas del crimen y librar al Departamento de una cultura que ha permitido que se enconen las pandillas de agentes. Juntos, podemos y haremos de este un departamento de clase mundial que mejorará la seguridad y la justicia, y enorgullecerá al condado de Los Ángeles”. <br/>
+                    <motion.img
+                        src="/img/light-signature.png"
+                        alt="Eric Strong Signature"
+                        initial="initial"
+                        animate="animate"
+                        variants={fadeIn}/> {/* <span className={styles.small}>— Eric Strong</span> */}
+                </p>
             </motion.section>
-
             <motion.section
                 className={styles.twoCol}
                 initial="initial"
@@ -68,62 +74,34 @@ export default function Home() {
             }}
                 variants={fadeInUp}>
                 <div className={styles.imgCol}>
-                    <motion.img
-                        src="/img/feat_01.jpg"
-                        alt="Picture of Los Angeles"
+                <motion.video
                         initial="initial"
                         animate="animate"
-                        variants={fadeIn}/>
+                        variants={fadeIn}
+                        autoPlay="autoplay"
+                        loop={true}
+                        playsInline 
+                        muted>
+                        <source src="/video/eric-comp.mp4" type="video/mp4"/>
+                    </motion.video>
                 </div>
                 <div className={styles.textCol}>
-                <FadeInLeftWhenVisible delay={.3}>
-                    <h2>Get to Know Eric Strong</h2>
-                    </FadeInLeftWhenVisible>
-                    <p>Over his nearly 30-years in law enforcement, Eric Strong has led units across
-                        virtually every function of the L.A. County Sheriff’s Department, from patrol to
-                        courts, custody, investigations, internal affairs, risk management and auditing.</p>
-                    <p>While his professional experience sets him apart, Eric’s personal experience
-                        as a victim of crime, someone who has been profiled by police, and who has
-                        family members who have been incarcerated and even killed by law enforcement, is
-                        what enables him to lead LA County at this critical time.</p>
-                    <Link href="/about">
-                        <a className={styles.button}>
-                            Learn more about Eric</a>
-                    </Link>
-                </div>
-            </motion.section>
+                    <FadeInLeftWhenVisible>
+                        <h2>Conozca a Eric Strong</h2>
 
-            <motion.section
-                className={styles.video}
-                initial="initial"
-                whileInView="animate"
-                viewport={{
-                once: true
-            }}
-                variants={fadeInUp}>
-                <p className={styles.quote}>“As L.A. County Sheriff, my mission will be to
-                    enhance your safety, protect victims of crime, and rid the Department of a
-                    culture that has allowed deputy gangs to fester. Together, we can and will make
-                    this a world-class department that will enhance safety and justice, and make Los
-                    Angeles County proud.”<br/>
-                    <span className={styles.small}>— Eric Strong</span>
-                </p>
-                <div className={styles.mw800}>
-                    <div className={styles.videoContainer}>
-                        <iframe
-                            width="100%"
-                            height="315"
-                            src="https://www.youtube.com/embed/LXb3EKWsInQ"
-                            title="YouTube video player"
-                            frameBorder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                            allowFullScreen></iframe>
-                    </div>
+                        <p>Durante sus casi 30 años en la aplicación de la ley, Eric Strong ha dirigido unidades en prácticamente todas las funciones del Departamento del Sheriff del condado de Los Ángeles, desde patrullas hasta tribunales, custodia, investigaciones, asuntos internos, gestión de riesgos y auditoría.</p>
+                        <p>Si bien su experiencia profesional lo distingue, la experiencia personal de Eric como víctima de un delito, alguien que ha sido perfilado por la policía y que tiene familiares que han sido encarcelados e incluso asesinados por la policía, es lo que le permite liderar el condado de Los Ángeles en este momento crítico.</p>
+                        <Link href="/about">
+                            <a className={styles.button}>
+                            ACERCA de Eric</a>
+                        </Link>
+                    </FadeInLeftWhenVisible>
                 </div>
             </motion.section>
+            
         </motion.div>
     )
 }
 
-Home.title = 'Eric Strong para el alguacil del condado de Los Ángeles'
+Home.title = 'Eric Strong for Los Angeles County Sheriff'
 Home.description = 'Eric Strong for Los Angeles County Sheriff'

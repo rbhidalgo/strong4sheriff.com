@@ -39,7 +39,7 @@ const Contact = () => {
                     once: true
                 }}
                     variants={fadeInUp}>Contact Team Strong</motion.h2>
-                <p>For media inquiries, please email us at: Info@strong4sheriff.com <br/>To reach Eric’s Campaign Manager Paula Ramirez email:  Paula@strong4sheriff.com or call (323) 328-7502</p>
+                <p>For media inquiries, please email us at: Info@strong4sheriff.com</p>
                 <form
                     name="contact-us"
                     method="POST"

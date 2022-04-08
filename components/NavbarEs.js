@@ -8,7 +8,7 @@ import Logo from "./Logo";
 const menu = [
     {
         title: 'Acerca',
-        path: '/es/about'
+        path: '/es/acerca'
     }, {
         title: 'Priorities',
         path: '/es/priorities'
