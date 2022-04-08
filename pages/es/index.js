@@ -1,5 +1,5 @@
-import JoinCta from '../components/JoinCta'
-import styles from '../styles/Home.module.scss'
+import JoinCta from '../../components/JoinCta'
+import styles from '../../styles/Home.module.scss'
 import {motion} from 'framer-motion';
 import {
     fadeInUp,
@@ -8,7 +8,7 @@ import {
     FadeInWhenVisible,
     FadeInLeftWhenVisible,
     FadeInRightWhenVisible
-} from '../animations/animations';
+} from '../../animations/animations';
 import Link from "next/link";
 
 export default function Home() {

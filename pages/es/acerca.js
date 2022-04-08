@@ -1,5 +1,5 @@
-import JoinCta from '../components/JoinCta'
-import styles from '../styles/About.module.scss'
+import JoinCta from '../../components/JoinCta'
+import styles from '../../styles/About.module.scss'
 import {motion} from "framer-motion";
 import {
     fadeInUp,
@@ -9,7 +9,7 @@ import {
     fadeInLeft,
     FadeInRightWhenVisible,
     FadeInLeftWhenVisible
-} from '../animations/animations';
+} from '../../animations/animations';
 
 const about = () => {
     return (
