@@ -5,6 +5,8 @@ const medDonors = [
     {
         name: "Culver City Democratic Club"
     }, {
+        name: "MLK Democratic Club"
+    }, {
         name: "Progressive Democratic Club"
     }, {
         name: "ILWU Local 13"

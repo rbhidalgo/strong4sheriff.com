@@ -1,6 +1,7 @@
 import JoinCta from '../components/JoinCta'
 import styles from '../styles/Endorsements.module.scss'
 import medDonors from '../data/medDonors'
+import law from '../data/law'
 import smDonors from '../data/smDonors'
 import organizations from '../data/organizations'
 import {motion} from "framer-motion";
@@ -47,69 +48,83 @@ const Endorsements = () => {
                     <div className={styles.top_donors_grid}>
 
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>James Costos</h3>
-                                <p>US Ambassador</p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible delay={.4} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>Eric Hirshberg</h3>
-                                <p>Investor/Advisor/Former CEO Activision</p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible delay={.6} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>Jorge Marquez</h3>
-                                <p>Councilmember City of Covina</p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible delay={.8} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>Ryan Raether</h3>
-                                <p>Molina Healthcare Sr. Program Manager of Interventions</p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible delay={1} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>Derek Williams</h3>
-                                <p>Ontario PD Chief (ret.)</p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible delay={1.2} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
-                            <div className={styles.top_donors_donor__text}>
-                                <h3>Skipp Townsend</h3>
-                                <p>Community Activist Interventionist (2nd Call)</p>
-                            </div>
-                        </FadeInWhenVisible>
-                        <FadeInWhenVisible delay={1.2} className={styles.top_donors_donor}>
-                            <div className={styles.top_donors_donor__image}>
-                                {/* <Image src="/img/feat_donor_01.jpg" alt="" layout='fill'/> */}
-                            </div>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Mike Bonin</h3>
                                 <p>Los Angeles City Councilmember</p>
                             </div>
                         </FadeInWhenVisible>
-
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Jorge Marquez</h3>
+                                <p>Councilmember City of Covina</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>James Costos</h3>
+                                <p>US Ambassador</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>James Wally Brewster</h3>
+                                <p>US Ambassador</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Jasmyne Cannick</h3>
+                                <p>Journalist/Advocate</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Joe Gatlin</h3>
+                                <p>San Pedro NAACP Vice-President</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Joseph Luis Piñon</h3>
+                                <p>President of the Progressive Democratic Club</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Skipp Townsend</h3>
+                                <p>Community Activist Interventionist</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Bruce McCall</h3>
+                                <p>Pastor </p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Calvin Blakely</h3>
+                                <p>Clergy</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Gregory Sanders</h3>
+                                <p>Clergy</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Charles Harris</h3>
+                                <p>Clergy</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Phil Allen</h3>
+                                <p>Pastor</p>
+                            </div>
+                        </FadeInWhenVisible>
                     </div>
                 </div>
             </motion.section>
@@ -146,13 +161,6 @@ const Endorsements = () => {
                     {/* <h2>
                         <strong>Eric has a very diverse mixture of people and professions that support him. Below are just a few of the wonderful people:</strong>
                     </h2> */}
-                    <h2>Labor</h2>
-                    <div className={styles.med_donors_grid}>
-                        {medDonors.map((item, index) => <div className={styles.med_donor} key={index}>
-                            <h3>{item.name}</h3>
-                            <p>{item.title}</p>
-                        </div>)}
-                    </div>
                         <h2><strong>Organizations</strong></h2>
                         <div className={styles.med_donors_grid}>
                         {organizations.map((item, index) => <div className={styles.med_donor} key={index}>
@@ -160,6 +168,15 @@ const Endorsements = () => {
                             <p>{item.title}</p>
                         </div>)}
                     </div>
+                    <br/><br/><br/>
+                    <h2>Law Enforcement</h2>
+                    <div className={styles.med_donors_grid}>
+                        {law.map((item, index) => <div className={styles.med_donor} key={index}>
+                            <h3>{item.name}</h3>
+                            <p>{item.title}</p>
+                        </div>)}
+                    </div>
+
                 </div>
             </motion.section>
             <motion.section
@@ -177,11 +194,15 @@ const Endorsements = () => {
                     </h2>
                     <p className={styles.small}>-Eric Hirshberg</p>
                   </div>
+                  <h2><strong>Community</strong></h2>
+                  <br/><br/>
                     <div className={styles.sm_donors_grid}>
                         <ul className={styles.sm_donor_list}>
                             {smDonors.map((name, index) => <li key={index} className={styles.sm_donor_list_item}>{name}</li>)}
                         </ul>
                     </div>
+                    <br/>
+                    <p className={styles.small}>*Titles used for identification purposes only.</p>
                 </div>
             </motion.section>
         </motion.div>

@@ -105,10 +105,10 @@
     }
     &_grid {
         display: grid;
-        grid-template-columns: repeat(4, 1fr);
+        grid-template-columns: repeat(1fr);
         gap: 50px;
         @include bp(ws) {
-            grid-template-columns: repeat(2, 1fr);
+            // grid-template-columns: repeat(2, 1fr);
         }
         @include bp(dt) {
             gap: 25px;
@@ -190,16 +190,17 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: flex-start;
+        margin-bottom: 25px;
     }
     .med_donor {
-        flex: 0 25%;
+        flex: 0 100%;
         text-align: center;
         padding: 25px;
-        @include bp(dt) {
-            flex: 0 33%;
-        }
+        // @include bp(dt) {
+        //     flex: 0 33%;
+        // }
         @include bp(tb) {
-            flex: 0 50%;
+            // flex: 0 50%;
             padding: 20px;
         }
         @include bp(mb) {
@@ -258,4 +259,8 @@
         }
       }
     }
+}
+
+.small {
+    font-size: 14px;
 }
