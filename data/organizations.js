@@ -10,6 +10,8 @@ const medDonors = [
         name: "Progressive Democratic Club"
     }, {
         name: "ILWU Local 13"
+    }, {
+        name: "Democrats for Neighborhood Action (DNA)"
     },
 ];
 

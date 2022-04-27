@@ -129,6 +129,7 @@ const smDonors = [
 'Susan Grant',
 'Susan Nelson',
 'Suzanne Patterson',
+'Stevie Wonder',
 'Tamla Milton',
 'Terry Brown',
 'Traci Smith',
