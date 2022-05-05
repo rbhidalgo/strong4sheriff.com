@@ -35,6 +35,30 @@ export default function Home() {
                     </div>
                 </FadeInRightWhenVisible>
             </motion.section>
+            <motion.section
+                className={styles.twoColDark}
+                initial="initial"
+                whileInView="animate"
+                viewport={{
+                once: true
+            }}
+                variants={fadeInUp}>
+                <div className={styles.imgCol}>
+                <motion.img
+                        src="/img/full-feat_12.jpg"
+                        alt="Picture of Los Angeles"
+                        initial="initial"
+                        animate="animate"
+                        variants={fadeIn}/>
+                </div>
+                <div className={styles.textCol}>
+                    <FadeInLeftWhenVisible>
+                        <p className={styles.quote}>"...I don’t want to continue hearing talk about what they’re going to do and they never do it. I want to have leadership that has the experience and has gone through it to know what needs to be done and they do it and I believe that’s Eric Strong. Period!” <br/>
+                        <span className={styles.small}>— Stevie Wonder</span>
+                        </p>
+                    </FadeInLeftWhenVisible>
+                </div>
+            </motion.section>
             <JoinCta/>
             <motion.section
                 className={styles.video}
