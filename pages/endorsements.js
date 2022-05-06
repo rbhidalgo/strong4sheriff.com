@@ -44,6 +44,17 @@ const Endorsements = () => {
                 variants={fadeInUp}>
                 <div className={styles.container}>
                 <h3>Eric has a very diverse mixture of people and professions that support him. Below are just a few of the wonderful people:</h3>
+                <br/><br/>
+                <h2><strong>Organizations</strong></h2>
+                <div className={styles.med_donors}>
+                <div className={styles.med_donors_grid}>
+                        {organizations.map((item, index) => <div className={styles.med_donor} key={index}>
+                            <h3>{item.name}</h3>
+                            <p>{item.title}</p>
+                        </div>)}
+                    </div>
+                </div>
+                        
                 <h2 className={styles.title}><strong>Elected & Community Leaders</strong></h2>
                     <div className={styles.top_donors_grid}>
 
@@ -98,7 +109,7 @@ const Endorsements = () => {
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Bruce McCall</h3>
-                                <p>Pastor </p>
+                                <p>Pastor</p>
                             </div>
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
@@ -123,6 +134,23 @@ const Endorsements = () => {
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Phil Allen</h3>
                                 <p>Pastor</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Stevie Wonder</h3>
+                                <p>Activist & Musician</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Bishop Henry Hearns</h3>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Emeritus</h3>
+                                <p>Lancaster Mayor</p>
                             </div>
                         </FadeInWhenVisible>
                     </div>
@@ -161,14 +189,7 @@ const Endorsements = () => {
                     {/* <h2>
                         <strong>Eric has a very diverse mixture of people and professions that support him. Below are just a few of the wonderful people:</strong>
                     </h2> */}
-                        <h2><strong>Organizations</strong></h2>
-                        <div className={styles.med_donors_grid}>
-                        {organizations.map((item, index) => <div className={styles.med_donor} key={index}>
-                            <h3>{item.name}</h3>
-                            <p>{item.title}</p>
-                        </div>)}
-                    </div>
-                    <br/><br/><br/>
+                        
                     <h2>Law Enforcement</h2>
                     <div className={styles.med_donors_grid}>
                         {law.map((item, index) => <div className={styles.med_donor} key={index}>

@@ -97,7 +97,10 @@
         text-align: center;
         line-height: 1.5;
         font-size: clamp(18px, 3vw, 24px);
-        margin-bottom: 30px;
+        margin-bottom: 10px;
+    }
+    .med_donors {
+        padding-top: 0;
     }
     @include bp(tb) {
         padding-top: 50px;
@@ -184,7 +187,7 @@
         font-weight: 600;
         line-height: 1.3;
         font-size: clamp(20px, 3vw, 36px);
-        margin-bottom: 50px;
+        // margin-bottom: 50px;
     }
     &_grid {
         display: flex;
