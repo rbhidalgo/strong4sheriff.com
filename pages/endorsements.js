@@ -66,6 +66,12 @@ const Endorsements = () => {
                         </FadeInWhenVisible>
                         <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
                             <div className={styles.top_donors_donor__text}>
+                                <h3>Nithya Raman</h3>
+                                <p>Los Angeles City Councilmember</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
                                 <h3>Jorge Marquez</h3>
                                 <p>Councilmember City of Covina</p>
                             </div>
@@ -151,6 +157,12 @@ const Endorsements = () => {
                             <div className={styles.top_donors_donor__text}>
                                 <h3>Emeritus</h3>
                                 <p>Lancaster Mayor</p>
+                            </div>
+                        </FadeInWhenVisible>
+                        <FadeInWhenVisible delay={.2} className={styles.top_donors_donor}>
+                            <div className={styles.top_donors_donor__text}>
+                                <h3>Emily Gordon</h3>
+                                <p>Writer, Producer</p>
                             </div>
                         </FadeInWhenVisible>
                     </div>
