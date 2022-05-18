@@ -1,12 +1,11 @@
 import JoinCta from '../components/JoinCta'
 import styles from '../styles/Endorsements.module.scss'
-import medDonors from '../data/medDonors'
 import law from '../data/law'
+import media from '../data/media'
 import smDonors from '../data/smDonors'
 import organizations from '../data/organizations'
 import {motion} from "framer-motion";
-import {fadeInUp, fadeIn, FadeInRightWhenVisible, FadeInLeftWhenVisible, FadeInWhenVisible} from '../animations/animations';
-import Image from 'next/image'
+import {fadeInUp, fadeIn, FadeInRightWhenVisible, FadeInWhenVisible} from '../animations/animations';
 
 const Endorsements = () => {
 
@@ -166,6 +165,15 @@ const Endorsements = () => {
                             </div>
                         </FadeInWhenVisible>
                     </div>
+                    <br/><br/>
+                <h2><strong>Media</strong></h2>
+                <div className={styles.med_donors}>
+                <div className={styles.med_donors_grid}>
+                        {media.map((item, index) => <div className={styles.med_donor} key={index}>
+                            <h3>{item.name}</h3>
+                        </div>)}
+                    </div>
+                </div>
                 </div>
             </motion.section>
             <motion.section

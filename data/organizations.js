@@ -6,6 +6,7 @@ const medDonors = [
     {name: 'LA Forward'},
     {name:'MLK Democratic Club'},
     {name:'North Valley Democratic Club'},
+    {name:'Progressive Asian Network for Action'},
     {name:'Progressive Democratic Club'},
     {name:'Santa Monica Democratic Club'},
     {name:'Stonewall Democratic Club'},
